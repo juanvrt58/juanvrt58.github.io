@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Salsa y Miga</title>
+    <link rel="stylesheet" href="../styles/blog-styles.css">
+    <link rel="stylesheet" href="../recursos/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+<!-- Header -->
+
+<header class="header">
+  <div class="logo">
+      <h1>Salsa y Miga</h1>
+  </div>
+  <nav class="navbar">
+      <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="cotizaciones.html">Cotizar</a></li>
+          <li><a href="galeriasym.html">Galería</a></li>
+      </ul>
+  </nav>
+</header>
+
+
+    <!-- Sección del Blog -->
+    <main class="main-content">
+        <section class="blog-posts">
+            <h2>Blog de Salsa y Miga</h2>
+            <p>Bienvenidos a nuestro blog, donde te compartimos artículos y consejos sobre eventos, catering y más.</p>
+
+            <article class="blog-post">
+                <h3><a href="Entradas-Blog/que-es-un-servicio-de-catering.html">¿Qué es un Servicio de Catering?</a></h3>
+                <p>En este artículo, te explicamos qué es un servicio de catering, los diferentes tipos que existen y cómo elegir el adecuado para tu evento...</p>
+                <a href="#">Leer más</a>
+            </article>
+
+            <article class="blog-post">
+                <h3><a href="#">Cosas Importantes para Eventos</a></h3>
+                <p>Si estás organizando un evento, hay varios aspectos que no puedes pasar por alto. En este artículo te damos consejos clave...</p>
+                <a href="#">Leer más</a>
+            </article>
+
+        </section>
+    </main>
+
+    <script>
+        function toggleNavbar() {
+            const navbar = document.querySelector('.navbar ul');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+<footer class="footer">
+  <div class="footer-columns">
+    <!-- Información principal -->
+    <div class="footer-column">
+      <h3>Salsa y Miga</h3>
+      <p>Tu aliado en la creación de eventos inolvidables, con servicios de catering, banquetería y más.</p>
+    </div>
+    <!-- Enlaces rápidos -->
+    <div class="footer-column">
+      <h3>Enlaces rápidos</h3>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#planes">Planes</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="../pages/cotizaciones.html">Cotizaciones</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <!-- Contacto -->
+    <div class="footer-column">
+      <h3>Contacto</h3>
+      <p>📞 +569 91 999 301</p>
+      <p>✉️ <a href="mailto:salsaymiga@gmail.com">contacto@salsaymiga.cl</a></p>
+      <p>📍 Santiago, Chile</p>
+    </div>
+    <!-- Redes sociales -->
+    <div class="footer-column">
+      <h3>Síguenos</h3>
+      <div class="social-buttons">
+        <a href="https://www.instagram.com/salsaymiga" target="_blank" class="btn-social instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/salsaymiga" target="_blank" class="btn-social facebook">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://www.twitter.com/salsaymiga" target="_blank" class="btn-social twitter">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <!-- Derechos reservados -->
+  <div class="footer-bottom">
+    © 2024 Salsa y Miga | Todos los derechos reservados.
+  </div>
+</footer>
+</body>
+</html>

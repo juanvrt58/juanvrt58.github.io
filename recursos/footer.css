@@ -1,0 +1,118 @@
+/* Footer general */
+.footer {
+    background: linear-gradient(to right, #8e1b1b, #6b1313); /* Tonos más oscuros y suaves */
+    color: #f1e3d3; /* Color claro pero suave */
+    padding: 30px 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .footer h3 {
+    color: #ffdd00; /* Amarillo para destacar títulos */
+    margin-bottom: 10px;
+  }
+  
+  .footer p, .footer a {
+    color: #f1e3d3;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #ffdd00;
+  }
+  
+  /* Enlaces rápidos y contacto */
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Redes sociales */
+  .social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-social i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .instagram {
+    background-color: #e6683c;
+    color: #fff;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+    color: #fff;
+  }
+  
+  .btn-social:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Línea divisora */
+  .footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+  }
+  
+  /* Derechos reservados */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #d8cfc4;
+  }
+  
+  /* Estilo general para secciones apartadas */
+  .seccion-apartada {
+    position: relative;
+    background-color: white; /* Color suave */
+    border: 2px dashed white; /* Borde estético */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

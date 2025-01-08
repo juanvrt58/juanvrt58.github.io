@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Yuji Boku';
+  src: url('fonts/YujiBoku.ttf') format('truetype');  /* Asegúrate de que el nombre y la ubicación coincidan */
+  font-weight: normal;
+  font-style: normal;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    /* Evita el scroll horizontal */
+  }
+
+  /* General Styles */
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    background: #f9f9f9;
+}
+  /* Estilo general del header */
+  /* Header general */
+  .header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background: linear-gradient(to right, #990001, #900c3f);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo */
+  .logo h1 {
+    position:relative;
+    left:20px;
+    font-family: 'Yuji Boku', sans-serif;
+    top:0;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffdd00;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex; /* Asegura que los elementos se alineen en fila */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 0 40px; /* Ajusta según sea necesario */
+  height: 70px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #ffdd00;
+    color: #900c3f;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 100%;
+      right: 0;
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+      display: none; /* Ocultar en móviles inicialmente */
+    }
+  
+    .navbar ul.active {
+      display: flex; /* Mostrar menú al activarlo */
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Botón para abrir/cerrar menú en móvil */
+  .navbar-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  
+    
+  /* Hero Section Styles */
+  .hero-section {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../img/web/PortadaGrande.jpg') no-repeat center center/cover;
+      color: #fff;
+      min-height: 100vh;
+      position: relative;
+  
+  
+    }
+  
+  

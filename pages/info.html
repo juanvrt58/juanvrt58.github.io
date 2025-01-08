@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Eventos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #EABC7A; /* Color dorado suave de fondo */
+            margin: 0;
+            padding: 0;
+            color: #990001; /* Color negro para el texto principal */
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para las tarjetas */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #990001; /* Color rojo oscuro para el título principal */
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .plan {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #F4F4F9; /* Color suave para el fondo de cada plan */
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .plan h2 {
+            font-size: 24px;
+            color: #273E12; /* Color verde oscuro para los nombres de los planes */
+        }
+
+        .plan .price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #990001; /* Color rojo oscuro para el precio */
+        }
+
+        .plan p {
+            font-size: 16px;
+            color: #000000; /* Color negro para los párrafos */
+            margin-top: 10px;
+        }
+
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .plan ul li {
+            font-size: 16px;
+            color: #273E12; /* Verde oscuro para las características */
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .plan ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #990001; /* Rojo oscuro para los íconos de lista */
+        }
+
+        .plan-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-contact {
+            background-color: #273E12; /* Verde oscuro para el botón */
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-contact:hover {
+            background-color: #990001; /* Rojo oscuro al pasar el cursor sobre el botón */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cotización para Eventos - Planes de Pizzas Ilimitadas</h1>
+
+        <!-- Plan Básico -->
+        <div class="plan">
+            <div class="plan-header">
+                <h2>Plan Básico</h2>
+                <span class="price">Desde $8.200 por persona</span>
+            </div>
+            <p>Perfecto para que tu evento salga perfecto con bajo presupuesto.</p>
+            <ul>
+                <li>Incluye 4 de nuestras opciones de nuestro menú S&M</li>
+                <li>Incluye servilletas para tus invitados</li>
+                <li>2 horas de pizzas ilimitadas</li>
+                <li>Incluye nuestra receta de masa napolitana especial</li>
+                <li>Cantidad mínima de invitados: 40</li>
+                <li>Incluye horario diurno y nocturno</li>
+                <li>Todos los ingredientes son frescos</li>
+                <li>Montaje rápido y eficiente</li>
+                <li>Puede agregar personal de servicio desde $35.000</li>
+            </ul>
+            <div class="plan-footer">
+                <a href="#" class="btn-contact">Contratar</a>
+            </div>
+        </div>
+
+        <!-- Plan Intermedio -->
+        <div class="plan">
+            <div class="plan-header">
+                <h2>Plan Intermedio</h2>
+                <span class="price">Desde $9.600 por persona</span>
+            </div>
+            <p>Ideal para empresas medianas que necesitan más herramientas y soporte.</p>
+            <ul>
+                <li>Incluye 5 opciones de nuestro menú S&M y menú especial</li>
+                <li>Incluye servilletas para tus invitados</li>
+                <li>3 horas de pizzas ilimitadas</li>
+                <li>Te dejaremos 3 pizzas en sus cajas para que puedas disfrutarlas después</li>
+                <li>Incluye nuestra receta de masa napolitana especial</li>
+                <li>Cantidad mínima de invitados: 30</li>
+                <li>Incluye horario diurno y nocturno</li>
+                <li>Todos los ingredientes son frescos</li>
+                <li>Montaje rápido y eficiente</li>
+                <li>Puede agregar personal de servicio desde $35.000</li>
+                <li>Descuentos por cantidad de personas</li>
+            </ul>
+            <div class="plan-footer">
+                <a href="#" class="btn-contact">Contratar</a>
+            </div>
+        </div>
+
+        <!-- Plan Avanzado -->
+        <div class="plan">
+            <div class="plan-header">
+                <h2>Plan Avanzado</h2>
+                <span class="price">Desde $10.200 por persona</span>
+            </div>
+            <p>Plan ideal para matrimonios formales y eventos</p>
+            <ul>
+                <li>-Incluye 7 variedades de nuestros menú Salsa y Miga y Especial</li>
+                <li>-Inlcuye servilletas y platos para todos tus invitados</li>
+                <li>-Incluye 1 garzón que servirá pizzas entre tus invitados</li>
+                <li>-Incluye salsas (Salsa de Vino tinto, Pesto, Pomodoro)</li>
+                <li>-Te dejaremos 4 pizzas para que puedas disfrutarlas después</li>
+                <li>-Pizzas ilimitadas hasta que tus invitados no quieran más (Hacemos un break de 40 minutos, y luego continuaremos sirviendo hasta que ya rechacen todas las pizzas)<a href="#">Info</a></li>
+                <li>-Opción de montaje horas antes del evento (sujeto a disponibilidad)</li>
+                <li>-Incluye nuestra receta de masa napolitana especial</li>
+                <li>-Cantidad mínima de invitados: 25</li>
+                <li>-Incluye una opción vegan (con queso vegan)</li>
+                <li>-Incluye horario diurno y nocturno</li>
+                <li>-Todos los ingredientes son frescos</li>
+                <li>-Montaje rápido y eficiente</li>
+                <li>-Puede agregar personal se servicio desde $35.000</li>
+                <li>-Descuentos por cantidad de personas</li>
+            </ul>
+            <div class="plan-footer">
+                <a href="#" class="btn-contact">Contratar</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
