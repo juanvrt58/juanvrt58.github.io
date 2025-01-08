@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho disponible */
+        margin-bottom: 20px;
+    }
+  }

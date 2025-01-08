@@ -1,3 +1,5 @@
+
+
 /* Footer general */
 .footer {
     background: linear-gradient(to right, #8e1b1b, #6b1313); /* Tonos más oscuros y suaves */
@@ -98,21 +100,8 @@
   /* Derechos reservados */
   .footer-bottom {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0px;
     font-size: 0.8rem;
     color: #d8cfc4;
-  }
-  
-  /* Estilo general para secciones apartadas */
-  .seccion-apartada {
-    position: relative;
-    background-color: white; /* Color suave */
-    border: 2px dashed white; /* Borde estético */
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    margin: 20px auto;
-    max-width: 500px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   

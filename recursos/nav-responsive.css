@@ -1,0 +1,22 @@
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    /* Oculta el menú inicialmente en móviles */
+    .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 80%;
+      margin: auto;
+     
+    }
+    .navbar ul {
+     display: flex;
+     flex-direction:row;
+     top: 100px; /* Debajo de la navbar */
+     right: 0;
+     margin-top: 130px;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+     border-radius: 0 0 10px 10px;
+  }
+  }

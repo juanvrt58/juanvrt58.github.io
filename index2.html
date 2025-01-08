@@ -5,37 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salsa y Miga</title>
     
-    <link rel="stylesheet" href="styles/index/styles.css">
-    <link rel="stylesheet" href="styles/index/styles-responsive">
-
-    <link rel="stylesheet" href="recursos/footer.css">
-    <link rel="stylesheet" href="recursos/footer-responsive.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="recursos/nav.css">
-    <link rel="stylesheet" href="recursos/nav-responsive.css">
-
-    <!--Links externos-->
+    <link rel="stylesheet" href="styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Yuji+Boku&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  
 
 </head>
 <body>
 <!-- Header -->
- <header class="header">
+
+<header class="header">
   <div class="logo">
-    <h1>Salsa y Miga</h1>
+      <h1>Salsa y Miga</h1>
   </div>
   <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="pages/services.html">Servicios</a></li>
-      <li><a href="pages/nosotros.html">Nosotros</a></li>
-      <li><a href="pages/menu.html">Menú</a></li>
-      <li><a href="pages/cotizaciones.html">Cotizar</a></li>
-      <li><a href="pages/galeriasym.html">Galería</a></li>
-    </ul>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/services.html">Servicios</a></li>
+          <li><a href="pages/nosotros.html">Nosotros</a></li>
+          <li><a href="pages/menu.html">Menú</a></li>
+          <li><a href="pages/cotizaciones.html">Cotizar</a></li>
+          <li><a href="pages/galeriasym.html">Galería</a></li>
+      </ul>
   </nav>
+  
 </header>
 
 <!--Menú flotante-->
@@ -56,15 +54,18 @@
           <p class="hero-subtitle">
             Deléitate con nuestras pizzas napolitanas, aperitivos únicos y servicio de catering profesional. ¡Creamos momentos inolvidables!
           </p>
-          <div class="d-flex gap-3">
+          <div class="hero-buttons">
             <a class="btn btn-primary" href="pages/services.html">Ver Planes</a>
-            <a class="btn btn-secondary" href="pages/cotizaciones.html">Cotizar Evento</a>
+<a class="btn btn-secondary" href="pages/cotizaciones.html">Cotizar Evento</a>
           </div>
         </div>
+       <!--<div class="hero-image">
+          <img src="img/web/Peperonni_1.webp" alt="Deliciosa pizza napolitana recién hecha">
+        </div>   -->
       </header>
       
-      <!--  Sección "Sobre Nosotros" -->
       <section id="nosotros" class="services">
+        
         <div class="container">
             <h2 class="section-title">Acerca de Salsa y Miga</h2>
             <div class="nosotros-content">
@@ -73,7 +74,7 @@
                     <img src="img/web/JuanyNico.jpg" alt="Equipo de Salsa y Miga" class="nosotros-image">
                 </div>
                 <!-- Texto sobre la historia y valores -->
-                <div class="card-title">
+                <div class="text-container">
                     <h3>Sobre nosotros</h3>
                     <p>
                         Somos Juan y Nicolás, dos apasionados por la cocina y el arte de crear momentos únicos. Desde los inicios de 
@@ -128,9 +129,9 @@
                   <p class="ocultar">Tenemos una selección única de aperitivos y tablas exclusivamente para ti. </p>
               </div>
             </div>
-          
-            <a class="btn-ver-mas" href="pages/services.html">Conoce más de nuestros servicios</a>
-           
+            <div class="btn-services">
+                <a href="pages/services.html">Conoce más de nuestros servicios</a>
+            </div>
         </div>
     </section>
 
@@ -169,8 +170,8 @@
               </div>
           </div>
       </section>
-
-    <section class="main-content" id="packs">
+  <section clas="hero-section" id="packs">
+    <section class="main-content">
       <h2 class="section-title">Packs de Eventos</h2>
       <div class="service-cards">
         <!-- Pack destacado -->
@@ -211,7 +212,8 @@
           <a href="pages/services.html" class="btn-ver-mas">Ver Más Opciones para mi Evento</a>
       </div>
         </section>
-
+       
+  </section>
            
 
  <!-- Sección Preguntas -->
