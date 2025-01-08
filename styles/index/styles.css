@@ -5,6 +5,9 @@
   font-style: normal;
 }
 
+.movile{
+  display:none;
+}
 /* General Styles */
 
   .main-content {
@@ -59,9 +62,9 @@ body {
 .ocultar{
   display:none;
 }
-* {
+/* {
   outline: 1px solid red; 
-}
+} */
 .proximamente{
   position:relative;
   z-index: 10;
@@ -394,8 +397,8 @@ body {
 }
 
 .service-item {
-flex: 1 1 calc(33.33% - 20px); /* Ajusta dinámicamente el ancho con espacio entre elementos */
-max-width: calc(33.33% - 20px); /* Previenes que un elemento se expanda más allá del 33% */
+  flex: 1 1 calc(33.33% - 20px); /* Ajusta dinámicamente el ancho con espacio entre elementos */
+  max-width: calc(33.33% - 20px); /* Previenes que un elemento se expanda más allá del 33% */
 text-align: center;
 margin: 10px; /* Controla los márgenes para evitar acumulación */
 box-sizing: border-box; /* Incluye márgenes y padding en el ancho total */
@@ -870,4 +873,3 @@ margin-bottom: 10px;
 .btn-ver-mas:hover {
   background-color: #990001;
 }
-
