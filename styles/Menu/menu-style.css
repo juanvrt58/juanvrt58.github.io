@@ -1,0 +1,136 @@
+
+.desktop{
+    display:block;
+}
+.movile{
+    display:none;
+}
+/* menu.css */
+
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Raleway:wght@400;600&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.menu {
+    margin-top: 60px;
+  padding: 80px 10%;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+}
+
+.seccion {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.seccion h2 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 36px;
+  color: #990001;
+  margin-bottom: 30px;
+}
+
+.pizza-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pizza-item {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.pizza-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para pizzas vegetarianas */
+.pizza-item.vegetariana {
+  border-left: 8px solid #273E12;
+  background:  #EABC7A;
+}
+
+/* Estilo para pizzas con carne */
+.pizza-item.carne {
+  border-left: 8px solid #990001;
+  background:  #EABC7A;
+}
+
+.pizza-item h3 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 20px;
+  color: #990001;
+  margin-bottom: 15px;
+}
+
+.pizza-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Decoraciones laterales */
+.decoraciones {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.decoraciones img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.decoraciones img:hover {
+  transform: scale(1.1);
+}
+
+/* menu-responsivo.css */
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 40px 5%;
+  }
+
+  .seccion h2 {
+    font-size: 28px;
+  }
+
+  .pizza-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .pizza-item {
+    padding: 15px;
+  }
+
+  .pizza-item h3 {
+    font-size: 18px;
+  }
+
+  .pizza-item p {
+    font-size: 14px;
+  }
+
+  .decoraciones img {
+    width: 80px;
+  }
+}

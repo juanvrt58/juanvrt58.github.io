@@ -221,11 +221,7 @@
       /* ****************************************************************/
       /*               Sección Hero Section */
       /* ****************************************************************/
-      .hero-section {
-        min-height: 80vh;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
-                    url('../../img/web/PortadaGrande.jpg') no-repeat center center/cover;
-      }
+    
       
   /* Hero Section Base */
 .hero-section {
@@ -239,7 +235,8 @@
     color: #fff;
     position: relative;
     text-align: center; /* Centra el texto por defecto */
-    top:60px;
+    top:80px;
+    margin-top: 30px;
   }
   
   /* Ajuste de contenido */
