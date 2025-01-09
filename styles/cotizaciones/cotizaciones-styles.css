@@ -1,3 +1,9 @@
+.desktop{
+    display: block;
+}
+.movile{
+    display: none;
+}
 .quote-form {
     position: relative;
     background-color: #fff;

@@ -1,10 +1,4 @@
 /* Estilos generales */
-.desktop{
-    display: none;
-}
-.movile {
-    display:block;
-}
 
 .quote-form {
     background-color: #fff;
@@ -131,6 +125,13 @@
 
 /* Media Queries para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+    .movile {
+        display:block;
+    }
+    
     .quote-form {
         margin: 50px 20px; /* Reducir márgenes en dispositivos pequeños */
         flex: 1 1 80%; /* Hacer el formulario más grande en pantallas pequeñas */
