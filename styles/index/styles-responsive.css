@@ -235,15 +235,16 @@
     color: #fff;
     position: relative;
     text-align: center; /* Centra el texto por defecto */
-    top:80px;
-    margin-top: 30px;
+    top:0px;
+    margin-top: 0px;
   }
   
   /* Ajuste de contenido */
   .hero-content {
     max-width: 600px; /* Limita el ancho del contenido */
-    margin: auto; /* Centra el contenido */
+    margin-top: 50px; /* Centra el contenido */
     z-index: 2;
+
   }
   
   /* Título */

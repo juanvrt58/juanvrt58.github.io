@@ -1,41 +1,15 @@
-
-body {
-    font-family: 'Raleway', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0px;
-    padding: 0px;
-    background: #f9f9f9;
-}
-  /* Hero Section Styles */
-  .hero-section {
-      max-width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 5%;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../img/web/PortadaGrande.jpg') no-repeat center center/cover;
-      color: #fff;
-      min-height: 100vh;
-      position: relative;
-     
-  
-    }
-  
-  
-
-/* Formulario de Cotización */
-.main-content {
-    padding: 1px;
-}
-
 .quote-form {
+    position: relative;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 150px;
+    margin: 150px auto 100px auto;
+    flex: 1 1 60%;
+    min-width: 300px;
+    top:90px;
+    display: flexbox;
     
 }
 
@@ -79,32 +53,16 @@ body {
     margin-top: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .quote-form {
-        padding: 20px;
-    }
-}
 /* Contenedor de cotización */
 .quote-container {
     display: flex;
+    position: relative;
+    
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-    margin: 20px 0;
-}
+    margin: 20px;
 
-/* Formulario de cotización */
-.quote-form {
-    flex: 1 1 60%;
-    min-width: 300px;
 }
 
 /* Información adicional */
