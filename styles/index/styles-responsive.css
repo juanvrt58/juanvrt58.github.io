@@ -5,14 +5,14 @@
         font-weight: normal;
         font-style: normal;
       }
-      
-      /* General Styles */
       .movile{
         display: block;
       }
       .desktop{
         display: none;
       }
+      /* General Styles */
+    
         .main-content {
           padding: 60px 20px;
           background-color: #f9f9f9;

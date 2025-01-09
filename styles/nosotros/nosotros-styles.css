@@ -1,0 +1,130 @@
+/* Estilos Generales */
+.desktop{
+    display:block;
+}
+.movile{
+    display:none;
+}
+/* Estilo para la sección de los Fundadores */
+.main-content {
+    padding: 60px 0;
+    margin-top: 80px;
+    background-color: #f4f4f4;
+}
+
+.img-fundadores {
+    width: 100%;
+    max-width: 350px;  /* Máximo tamaño para la imagen de los fundadores */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title h3 {
+    font-size: 1.8rem;
+    color: #273E12; /* Color de texto */
+    margin-top: 20px;
+}
+
+.card-title p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo de la galería */
+.galeria {
+    padding: 80px 140px;
+    background-color: #fff;
+}
+
+.contenedor-galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2.5rem;
+    color: #273E12; /* Color personalizado */
+    margin-bottom: 40px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-ver-mas {
+    margin-top: 40px;
+}
+
+.boton-ver-mas .btn-ver-mas {
+    background-color: #990001; /* Color personalizado */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-ver-mas .btn-ver-mas:hover {
+    background-color: #000000; /* Color oscuro al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Estilos de Bootstrap */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    padding: 20px;
+}
+
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Estilo para la imagen de portada */
+.portada {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-portada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra toda el área sin distorsionarse */
+    object-position: center; /* Centra la imagen */
+}

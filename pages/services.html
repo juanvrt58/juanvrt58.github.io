@@ -3,45 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Salsa y Miga</title>
-    <link rel="stylesheet" href="../styles/services-styles.css">
-    <link rel="stylesheet" href="../styles/planes-styles.css">
+    <title>Salsa y Miga</title>
+    
+    <link rel="stylesheet" href="../styles/services/services-styles.css">
+    <link rel="stylesheet" href="../styles/services/services-styles-responsive.css">
    
-    <link rel="stylesheet" href="../../git/recursos/footer.css">
-    <link rel="stylesheet" href="../../git/recursos/footer-responsive.css">
 
-    <link rel="stylesheet" href="../../git/recursos/nav.css">
-    <link rel="stylesheet" href="../../git/recursos/nav-responsive.css">
+    <link rel="stylesheet" href="../recursos/footer.css">
+    <link rel="stylesheet" href="../recursos/footer-responsive.css">
+
+    <link rel="stylesheet" href="../recursos/nav.css">
+    <link rel="stylesheet" href="../recursos/nav-responsive.css">
 
     <!--Links externos-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Yuji+Boku&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<!-- Header -->
-
-<header class="header">
-  <div class="logo">
-      <h1>Salsa y Miga</h1>
-  </div>
-  <nav class="navbar">
-      <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="services.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="menu.html">Menú</a></li>
-          <li><a href="cotizaciones.html">Cotizar</a></li>
-          <li><a href="galeriasym.html">Galería</a></li>
-      </ul>
-  </nav>
-</header>
 
 
-
-
+  <body>
+    <div class="desktop">
+      <!-- Header -->
+       <header class="header">
+        <div class="logo">
+          <h1>Salsa y Miga</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="cotizaciones.html">Cotizar</a></li>
+            <li><a href="galeriasym.html">Galería</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      
   <!-- Sección de Planes -->
-  <main class="main-content">
     <section class="plan-section">
         <h2>Elige el tipo de servicio que te gustaría cotizar</h2>
         <p>En Salsa y Miga tenemos distintos planes para adaptarnos a tu presupuesto. Consulta cualquier tipo de modificación, duda o solicitud respecto a los planes y te responderemos en seguida. Para cotizar, sólo debes indicarnos que tipo de servicio te gustaría, y rellenar los campos en la sección "Cotización"</p>
@@ -119,177 +121,492 @@
             </div>
         </div>
     </section>
-<section class="main-content">
-  <h2 class="section-title">Packs de Eventos</h2>
-  <div class="service-cards" id="services-cards">
-    <!-- Pack destacado -->
-    <div class="service-card destacado">
-      <span class="badge">Mejor opción</span>
-      <h3>Pack 15 Classic</h3>
-      <p>Ofrecemos un servicio de catering para eventos que va desde pequeñas reuniones hasta grandes eventos corporativos. Con menús personalizados y opciones adaptadas a tus necesidades y presupuesto.</p>
-      <button class="btn-cotizar" id="openFormBtn" onclick='openModal()'>Cotizar Pack 15 Classic</button>
-      <div class="service-buttons">
-        <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" target="_blank" class="whatsapp-button">WhatsApp</a>
-    </div>
-    </div>
 
-    <!-- Pack destacado -->
-    <div class="service-card destacado">
-      <span class="badge">Mejor opción</span>
-      <h3>Pack 30 Classic</h3>
-      <p>Armamos la barra que necesites a medida para tu evento. Consulta nuestras opciones de barra de acuerdo a las necesidades de tu evento.</p>
-      <button class="btn-cotizar" onclick="openModal()">Cotizar Pack 30 Classic</button>
+    <section class="service-section">
+    <h2 class="section-title">Packs de Eventos</h2>
+    <div class="service-cards">
+      <!-- Pack destacado -->
+      <div class="service-card destacado">
+        <span class="badge">Opción destacada</span>
+        <h3>Pack 90 S&M</h3>
+        <p>Tu evento con 60 pizzas Salsa y Miga y 30 pizzas Premium. Selecciona 5 opciones de pizzas clásicas (saldrán 10 de cada una) y 3 variedades premium (saldrán 10 de cada una).</p>
+        <button class="btn-cotizar" onclick="openModal()">Pack 90 S&M | $9.300 (S/iva)</button>
       <div class="service-buttons">
-        <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" target="_blank" class="whatsapp-button">WhatsApp</a>
+        <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
     </div>
+      </div>
+  
+      <!-- Pack destacado -->
+      <div class="service-card destacado">
+        <span class="badge">Opción destacada</span>
+        <h3>Pack 30 Classic</h3>
+        <p>Tu evento con 30 pizzas Salsa y Miga. Menú: Capresse (Mozzarella, Pesto, Albahaca, Selección Cherry), Pepperoni (Mozzarella, American Pepperoni, Aceitunas), Osornina (Mozzarella, Rúcula, Prosciutto, Aceite de oliva CHEF, Queso Parmesano)</p>
+        <button class="btn-cotizar" onclick="openModal()">Pack 30 Classic | $9.300 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
     </div>
+      </div>
+  
+      <!-- Pack destacado -->
+      <div class="service-card destacado">
+        <span class="badge">Más popular</span>
+        <h3>Pack 45 S&M</h3>
+        <p>Tu evento con 30 pizzas Salsa y Miga y 15 Premium. Tienes la opción de seleccionar hasta 4 variedades Salsa y Miga y 2 variedades Premium </p>
+        <button class="btn-cotizar" onclick="openModal()">Pack 45 S&M | $9.550 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+      </div>
 
-    <!-- Pack destacado -->
-    <div class="service-card destacado">
-      <span class="badge">Mejor opción</span>
-      <h3>Pack 45 Classic</h3>
-      <p>Carta completa de aperitivos para tus eventos. ¡Puedes combinar los servicios para que tengas aperitivos junto a pizzas que desees!</p>
-      <button class="btn-cotizar" onclick="openModal()">Cotizar Pack 45 Classic</button>
-      <div class="service-buttons">
-        <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" target="_blank" class="whatsapp-button">WhatsApp</a>
-    </div>
-    </div>
 
     <!-- Packs no destacados -->
     <div class="service-card">
       <h3>Pack 60 Classic</h3>
-      <p>After office, conferencias o lanzamientos de producto. Nosotros creamos una experiencia memorable para empleados o clientes.</p>
-      <button class="btn-cotizar" onclick="openModal()">Cotizar Pack 60 Classic</button>
+      <p>Tu evento con 60 pizzas Salsa y Miga. Puedes elegir hasta 5 variedades del menú Salsa y Miga</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 60 Classic | $9.200 (S/iva)</button>
       <div class="service-buttons">
-        <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" target="_blank" class="whatsapp-button">WhatsApp</a>
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
     </div>
     </div>
 
     <div class="service-card">
       <h3>Pack 80 Classic</h3>
-      <p>¿Tienes una idea única para tu evento? ¡Nosotros lo hacemos realidad! Creamos eventos completamente a medida según tus preferencias y necesidades.</p>
-      <button class="btn-cotizar" onclick="openModal()">Cotizar Pack 80 Classic</button>
+      <p>Tu evento con 80 pizzas Salsa y Miga. Escoge hasta 4 variedades para crear el menú de tu evento. Saldrán 20 pizzas de cada una de tus selecciones</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 80 Classic | $9.200 (S/iva)</button>
       <div class="service-buttons">
-        <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" target="_blank" class="whatsapp-button">WhatsApp</a>
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
     </div>
     </div>
-    <!-- Modal -->
-<!-- Modal -->
+    <div class="service-card">
+      <h3>Pack 140 Classic</h3>
+      <p>Tu evento con 140 pizzas Salsa y Miga. Escoge hasta 5 variedades para crear el menú de tu evento.</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 140 Classic | $8.600 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    <div class="service-card">
+      <h3>Pack 200 Classic</h3>
+      <p>Tu evento con 200 pizzas Salsa y Miga. Escoge hasta 4 variedades para crear el menú de tu evento de nuestra carta Salsa y Miga</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 200 Classic | $8.500 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    <div class="service-card">
+      <h3>Pack 30 S&M</h3>
+      <p>Tu evento con 30 pizzas Salsa y Miga. Saldrán 10 Pizzas Premium y 20 Pizzas Salsa y Miga. Escoge hasta 4 variedades de nuestro menú Salsa y Miga y 1 variedades Premium para que sirvamos en tu evento.</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 30 S&M | $9.550 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    <div class="service-card">
+      <h3>Pack 60 S&M</h3>
+      <p>Tu evento con 60 pizzas Salsa y Miga. Escoge hasta 5 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 60 S&M | $9.400 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    <div class="service-card">
+      <h3>Pack 80 S&M</h3>
+      <p>Tu evento con 60 pizzas Salsa y Miga y 20 pizzas Premium. Escoge hasta 4 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 80 S&M | $9.400 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    <div class="service-card">
+      <h3>Pack 140 S&M</h3>
+      <p>Tu evento con 100 pizzas Salsa y Miga y 40 pizzas Premium. Escoge hasta 4 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 140 S&M | $9.100 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    <div class="service-card">
+      <h3>Pack 200 S&M</h3>
+      <p>Tu evento con 200 pizzas Salsa y Miga. Escoge hasta 5 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+      <button class="btn-cotizar" onclick="openModal()">Pack 200 S&M | $8.950 (S/iva)</button>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    <div class="service-card">
+      <h3>Pack Personalizado</h3>
+      <span class="badge">Selección Especial</span>
+      <p>Tu evento, tus reglas. Personaliza todo tu evento. Selecciona todas las pizzas que quieras de nuestro menú Salsa y Miga por $11.000 y todo el menú Premium desde $14.000. ¡Desde las 20! (Descuentos por cantidad)</p>
+      <div class="service-buttons">
+        <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+    </div>
+    </div>
+  </section>
+   
+  <!-- Modal -->
 <div id="modal" class="modal">
   <div class="modal-content">
     <form>
       <!-- Formulario de Google o tu contenido -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfMUIJldutif41Bjbcg7g2y7dzT4kRd2x-ND70ha7e2DaktQ/viewform?usp=header" width="100%" height="500px"></iframe>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfMUIJldutif41Bjbcg7g2y7dzT4kRd2x-ND70ha7e2DaktQ/viewform?usp=header" title="google-form" width="100%" height="500px"></iframe>
       <!-- Botón de cerrar -->
       <button type="button" class="close-btn">Cerrar</button>
     </form>
   </div>
 </div>
+      
+      <!--Sección Footer-->
+      <footer class="footer">
+        <div class="footer-columns">
+          <!-- Información principal -->
+          <div class="footer-column">
+            <h3>Salsa y Miga</h3>
+            <p>Tu aliado en la creación de eventos inolvidables, con servicios de catering, banquetería y más.</p>
+          </div>
+          <!-- Enlaces rápidos -->
+          <div class="footer-column">
+            <h3>Enlaces rápidos</h3>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#planes">Planes</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="pages/cotizaciones.html">Cotizaciones</a></li>
+              <li><a href="pages/blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <!-- Contacto -->
+          <div class="footer-column">
+            <h3>Contacto</h3>
+            <p>📞 +56 9 91999301</p>
+            <p>✉️ <a href="mailto:salsaymiga@gmail.com">contacto@salsaymiga.cl</a></p>
+            <p>📍 Santiago, Chile</p>
+          </div>
+          <!-- Redes sociales -->
+          <div class="footer-column">
+            <h3>Síguenos</h3>
+            <div class="social-buttons">
+              <a href="https://www.instagram.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social instagram">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+              <a href="https://www.facebook.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </a>
+              <a href="https://www.twitter.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social twitter">
+                <i class="fab fa-twitter"></i> Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <!-- Derechos reservados -->
+        <div class="footer-bottom">
+          © 2024 Salsa y Miga | Todos los derechos reservados.
+        </div>
+      </footer>
+      
+</div>
 
-</section>
 
-<!-- Sección de Servicios -->
-<main class="main-content">
-  <section class="services-section">
-      <h2 class="section-title">Descubre Nuestros Servicios</h2>
-      <p class="section-description">
-          En Salsa y Miga nos especializamos en brindar experiencias gastronómicas únicas. 
-          Cada uno de nuestros servicios está diseñado para satisfacer las necesidades de nuestros clientes. 
-          A continuación, detallamos nuestros principales servicios:
-      </p>
 
-      <div class="service-cards">
-          <!-- Tarjeta 1 -->
-          <div class="service-card">
-              <img src="../img/web/servicios1.jpg" alt="Catering para Eventos" class="service-img">
-              <h3 class="service-title">Catering para Eventos</h3>
-              <p class="service-description">
-                  Ofrecemos un servicio de catering para eventos que va desde pequeñas reuniones 
-                  hasta grandes eventos corporativos. Con menús personalizados y opciones adaptadas a tus necesidades y presupuesto.
-              </p>
-          </div>
-          <!-- Tarjeta 2 -->
-          <div class="service-card">
-              <img src="../img/web/IMG_9849.JPG" alt="Barras Personalizadas" class="service-img">
-              <h3 class="service-title">Barras Personalizadas</h3>
-              <p class="service-description">
-                  Armamos la barra que necesites a medida para tu evento. ¿Grande? ¿Pequeña? ¿3 mesas? 
-                  Consulta nuestras opciones de barra de acuerdo a las necesidades de tu evento.
-              </p>
-          </div>
-          <!-- Tarjeta 3 -->
-          <div class="service-card">
-              <div class="coming-soon-ribbon">Próximamente</div>
-              <img src="../img/galeria/10.jpg" alt="Aperitivos para eventos" class="service-img">
-              <h3 class="service-title">Menú Especial de Aperitivos</h3>
-              <p class="service-description">
-                  Carta completa de aperitivos para tus eventos. ¡Puedes combinar los servicios para que tengas tus aperitivos junto a las opciones de pizzas que desees!
-              </p>
-          </div>
-          <!-- Tarjeta 4 -->
-          <div class="service-card">
-              <img src="../img/galeria/17.jpg" alt="Eventos Corporativos" class="service-img">
-              <h3 class="service-title">Eventos Corporativos</h3>
-              <p class="service-description">
-                  Ya sea un after office, celebración, conferencia, seminario o lanzamiento de producto, 
-                  nosotros nos encargamos de crear una experiencia memorable para tus empleados o clientes.
-              </p>
-          </div>
-          <!-- Tarjeta 5 -->
-          <div class="service-card">
-              <img src="../img/web/Eventospersonalizados.jpg" alt="Eventos Personalizados" class="service-img">
-              <h3 class="service-title">Eventos 100% Personalizados</h3>
-              <p class="service-description">
-                  ¿Tienes una idea única para tu evento? ¡Nosotros lo hacemos realidad! 
-                  Creamos eventos completamente a medida según tus preferencias y necesidades. 
-                  Ponte en contacto con nosotros para detalles.
-              </p>
-          </div>
+
+
+
+
+
+
+
+
+<div class="movile">
+  <!-- Header -->
+  <header class="header-salsa">
+    <div class="logo-salsa">
+      <h1>Salsa y Miga</h1>
+    </div>
+    <nav class="navbar-salsa">
+      <!-- Botón para activar el menú móvil -->
+      <button class="navbar-toggler-salsa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon-salsa">☰</span>
+      </button>
+  
+      <!-- Menú desplegable -->
+      <div class="collapse navbar-collapse-salsa" id="navbarMenu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="cotizaciones.html">Cotizar</a></li>
+          <li><a href="galeriasym.html">Galería</a></li>
+        </ul>
       </div>
-  </section>
-
- <!-- <section class="large-events">
-      <h2 class="section-title">Eventos Grandes o Corporativos</h2>
-      <p class="section-description">
-          Si planeas un evento grande o corporativo, te ofrecemos opciones exclusivas para eventos de mayor envergadura. 
-          Para estos eventos, es fundamental una planificación previa, por lo que recomendamos contactarnos con tiempo.
-      </p>
-  </section>-->
-</main>
+    </nav>
+  </header>
+  
 
 
-    <script>
-        function toggleNavbar() {
-            const navbar = document.querySelector('.navbar ul');
-            navbar.classList.toggle('active');
-        }
-    </script>
-    <!-- Sección de Preguntas Frecuentes -->
-    <section class="faq-section">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <h3>¿Qué son los puntos Eventos Salsa y Miga?</h3>
-            <p>Los puntos Eventos Salsa y Miga son puntos acumulables que te permitirán canjearlos por descuentos exclusivos para tus próximos eventos. Además, tendrás la opción de canjearlos por distintos productos que lanzaremos de forma EXCLUSIVA</p>
-        </div>
-        <div class="faq-item">
-            <h3>¡Quiero un descuento AHORA!</h3>
-            <p>Puedes obtener un descuento del 5% del valor total de tu evento sólo clickeando las 2 opciones de los Términos y Condiciones del formulario de cotización.</p>
-        </div>
-        <div class="faq-item">
-            <h3>¿Que debo hacer para reservar el Plan Completo?</h3>
-            <p>Para reservar el Plan Completo, sólo debes rellenar el formulario con la información que se requiere, e indicar que tipo de plan te gustaría contratar para tu evento. En la brevedad nos contactaremos contigo para terminar de revisar los detalles y listo, así de fácil es reservar</p>
+  
+   
+         <!-- Sección de Planes -->
+    <section class="plan-section">
+        <h2>Elige el tipo de servicio que te gustaría cotizar</h2>
+        <p>En Salsa y Miga tenemos distintos planes para adaptarnos a tu presupuesto. Consulta cualquier tipo de modificación, duda o solicitud respecto a los planes y te responderemos en seguida. Para cotizar, sólo debes indicarnos que tipo de servicio te gustaría, y rellenar los campos en la sección "Cotización"</p>
+
+        <div class="container">
+            <!-- Plan Básico -->
+            <div class="plan-card">
+                <img src="../img/web/planes1.jpg" alt="Plan Básico" class="plan-img">
+                <h3>Plan Básico</h3>
+                <p class="plan-price">Desde $8.600 Por persona</p>
+                <p>Perfecto para que tu evento salga perfecto con bajo presupuesto</p>
+                <ul>
+                    <li>-Incluye 4 opciones de nuestro menú S&M</li>
+                    <li>-Se calcula 5 porciones por persona</li>
+                    <li>-Incluye nuestra receta de masa napolitana especial</li>
+                    <li>-Cantidad mínima de invitados: 40</li>
+                    <li>-Incluye horario diurno y nocturno</li>
+                    <li>-Todos los ingredientes son frescos</li>
+                    <li>-Montaje rápido y eficiente</li>
+                    <li>-Puede agregar personal se servicio desde $35.000</li>
+                    <li>-Descuento por cantidad de personas</li>
+                    <li>-Inlcuye servilletas para tus invitados</li>
+
+                </ul>
+                <a class="btn-plan" href="cotizaciones.html">Contratar</a>
+            </div>
+
+            <!-- Plan Intermedio -->
+            <div class="plan-card">
+                <img src="../img/web/20241206_233251.jpg" alt="Plan Intermedio" class="plan-img">
+                <h3>Plan Intermedio</h3>
+                <p class="plan-price">Desde $9.600 Por Persona</p>
+                <p>Para empresas de tamaño mediano que necesitan más herramientas y soporte.</p>
+                <ul>
+                    <li>-Incluye 4 opciones de nuestro menú S&M y una opción de pizza especial</li>
+                    <li>-3 horas de pizzas ilimitadas</li>
+                    <li>-Te dejaremos 3 pizzas en sus cajas para que puedas disfrutarlas después</li>
+                    <li>-Incluye nuestra receta de masa napolitana especial</li>
+                    <li>-Cantidad mínima de invitados: 35</li>
+                    <li>-Incluye horario diurno y nocturno</li>
+                    <li>-Todos los ingredientes son frescos</li>
+                    <li>-Montaje rápido y eficiente</li>
+                    <li>-Puede agregar personal se servicio desde $35.000</li>
+                    <li>-Descuentos por cantidad de personas</li>
+                    <li>-Inlcuye servilletas para tus invitados</li>
+                </ul>
+                <a class="btn-plan" href="cotizaciones.html">Contratar</a>
+            </div>
+
+            <!-- Plan Avanzado -->
+            <div class="plan-card">
+                <img src="../img/web/IMG_9849.JPG" alt="Plan Avanzado" class="plan-img">
+                <h3>Plan Avanzado</h3>
+                <p class="plan-price">Desde $10.400 Por Persona</p>
+                <p>El plan ideal para grandes empresas o clientes con necesidades avanzadas.</p>
+                <ul>
+                    <li>-Incluye 5 opciones de nuestro menú S&M y 2 especiales</li>
+                    <li>-Incluye servilletas y platos para todos tus invitados</li>
+                    <li>-Incluye 1 garzón que servirá pizzas entre tus invitados</li>
+                    <li>-Incluye salsas (Salsa de Vino tinto, Pesto, Pomodoro)</li>
+                    <li>-Te dejaremos 4 pizzas para que puedas disfrutarlas después</li>
+                    <li>-Pizzas Ilimitadas por 3 horas</li>
+                    <li>-Opción de montaje horas antes del evento (sujeto a disponibilidad)</li>
+                    <li>-Incluye nuestra receta de masa napolitana especial</li>
+                    <li>-Cantidad mínima de invitados: 25</li>
+                    <li>-Incluye una opción vegan (con queso vegan)</li>
+                    <li>- 5+ puntos Eventos Salsa y Miga <a href="#">Info</a></li>
+                    <li>-Incluye horario diurno y nocturno</li>
+                    <li>-Todos los ingredientes son frescos</li>
+                    <li>-Montaje rápido y eficiente</li>
+                    <li>-Puede agregar personal se servicio desde $35.000</li>
+                    <li>-Descuentos por cantidad de personas</li>
+                </ul>
+                <a class="btn-plan" href="cotizaciones.html">Contratar</a>
+            </div>
         </div>
     </section>
-</main>
+      
+  
+      <section class="service-section">
+        <h2 class="section-title">Packs de Eventos</h2>
+        <div class="container">
+          <!-- Pack destacado -->
+          <div class="service-card destacado">
+            <span class="badge">Opción destacada</span>
+            <h3>Pack 90 S&M</h3>
+            <p>Tu evento con 60 pizzas Salsa y Miga y 30 pizzas Premium. Selecciona 5 opciones de pizzas clásicas (saldrán 10 de cada una) y 3 variedades premium (saldrán 10 de cada una).</p>
+            <button class="btn-cotizar" onclick="openModal()">Pack 90 S&M | $9.300 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+          </div>
+      
+          <!-- Pack destacado -->
+          <div class="service-card destacado">
+            <span class="badge">Opción destacada</span>
+            <h3>Pack 30 Classic</h3>
+            <p>Tu evento con 30 pizzas Salsa y Miga. Menú: Capresse (Mozzarella, Pesto, Albahaca, Selección Cherry), Pepperoni (Mozzarella, American Pepperoni, Aceitunas), Osornina (Mozzarella, Rúcula, Prosciutto, Aceite de oliva CHEF, Queso Parmesano)</p>
+            <button class="btn-cotizar" onclick="openModal()">Pack 30 Classic | $9.300 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56912345678?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+          </div>
+      
+          <!-- Pack destacado -->
+          <div class="service-card destacado">
+            <span class="badge">Más popular</span>
+            <h3>Pack 45 S&M</h3>
+            <p>Tu evento con 30 pizzas Salsa y Miga y 15 Premium. Tienes la opción de seleccionar hasta 4 variedades Salsa y Miga y 2 variedades Premium </p>
+            <button class="btn-cotizar" onclick="openModal()">Pack 45 S&M | $9.550 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+          </div>
+    
+    
+        <!-- Packs no destacados -->
+        <div class="service-card">
+          <h3>Pack 60 Classic</h3>
+          <p>Tu evento con 60 pizzas Salsa y Miga. Puedes elegir hasta 5 variedades del menú Salsa y Miga</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 60 Classic | $9.200 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+    
+        <div class="service-card">
+          <h3>Pack 80 Classic</h3>
+          <p>Tu evento con 80 pizzas Salsa y Miga. Escoge hasta 4 variedades para crear el menú de tu evento. Saldrán 20 pizzas de cada una de tus selecciones</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 80 Classic | $9.200 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack 140 Classic</h3>
+          <p>Tu evento con 140 pizzas Salsa y Miga. Escoge hasta 5 variedades para crear el menú de tu evento.</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 140 Classic | $8.600 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack 200 Classic</h3>
+          <p>Tu evento con 200 pizzas Salsa y Miga. Escoge hasta 4 variedades para crear el menú de tu evento de nuestra carta Salsa y Miga</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 200 Classic | $8.500 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack 30 S&M</h3>
+          <p>Tu evento con 30 pizzas Salsa y Miga. Saldrán 10 Pizzas Premium y 20 Pizzas Salsa y Miga. Escoge hasta 4 variedades de nuestro menú Salsa y Miga y 1 variedades Premium para que sirvamos en tu evento.</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 30 S&M | $9.550 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack 60 S&M</h3>
+          <p>Tu evento con 60 pizzas Salsa y Miga. Escoge hasta 5 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 60 S&M | $9.400 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack 80 S&M</h3>
+          <p>Tu evento con 60 pizzas Salsa y Miga y 20 pizzas Premium. Escoge hasta 4 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 80 S&M | $9.400 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack 140 S&M</h3>
+          <p>Tu evento con 100 pizzas Salsa y Miga y 40 pizzas Premium. Escoge hasta 4 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 140 S&M | $9.100 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack 200 S&M</h3>
+          <p>Tu evento con 200 pizzas Salsa y Miga. Escoge hasta 5 variedades de nuestro menú Salsa y Miga y 2 variedades Premium para que sirvamos en tu evento.</p>
+          <button class="btn-cotizar" onclick="openModal()">Pack 200 S&M | $8.950 (S/iva)</button>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        <div class="service-card">
+          <h3>Pack Personalizado</h3>
+          <span class="badge">Selección Especial</span>
+          <p>Tu evento, tus reglas. Personaliza todo tu evento. Selecciona todas las pizzas que quieras de nuestro menú Salsa y Miga por $11.000 y todo el menú Premium desde $14.000. ¡Desde las 20! (Descuentos por cantidad)</p>
+          <div class="service-buttons">
+            <a href="https://wa.me/56991999301?text=Hola, estoy interesado en el servicio de Catering para Eventos" rel="noopener noreferrer" target="_blank" class="whatsapp-button">WhatsApp</a>
+        </div>
+        </div>
+        </div>
+      </section>
+  
+               <!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <form>
+      <!-- Formulario de Google o tu contenido -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfMUIJldutif41Bjbcg7g2y7dzT4kRd2x-ND70ha7e2DaktQ/viewform?usp=header" title="google-form" width="100%" height="500px"></iframe>
+      <!-- Botón de cerrar -->
+      <button type="button" class="close-btn">Cerrar</button>
+    </form>
+  </div>
+</div>
+  
+   <!-- Sección Preguntas -->
+   <section id="faq" class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Preguntas Frecuentes</h2>
+  
+      <div class="faq-item">
+        <button class="faq-question">¿Qué significa "Pizzas ilimitadas"? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Seleccionando el plan completo, tienes la opción de disfrutar junto a tus invitados de todas las pizzas que desees durante el tiempo que estemos ahí. Primero hacemos una ronda de pizzas, luego un break y luego volvemos a servir nuevamente pizzas para todos aquellos que todavía tienen hambre.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">¿Puedo personalizar un plan según mis necesidades? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Sí, todos nuestros planes son personalizables. Contáctanos para que podamos adaptarlo a tus requerimientos según diponibilidad.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">¿Cuánto tiempo antes debo reservar un evento? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Recomendamos hacer la reserva con al menos 5 días de anticipación para garantizar la disponibilidad.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">¿Ofrecen servicios para eventos corporativos grandes? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Sí, contamos con el Plan Empresa para eventos corporativos grandes. Contáctanos con tiempo para planificar todos los detalles.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <button class="faq-question">¿Qué métodos de pago aceptan? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Aceptamos transferencias bancarias. Para reservar tu evento, es importante depositar el anticipo correspondiente para reservar el servicio para el día de tu evento. No importa cuanto antes reserves, tu evento estará agendado y preparandose desde el día que reserves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-    function toggleNavbar() {
-        const navbar = document.querySelector('.navbar ul');
-        navbar.classList.toggle('active');
-    }
-</script>
-    <!--Sección Footer-->
-<footer class="footer">
+  
+  <!--Sección Footer-->
+  <footer class="footer">
     <div class="footer-columns">
       <!-- Información principal -->
       <div class="footer-column">
@@ -300,18 +617,18 @@
       <div class="footer-column">
         <h3>Enlaces rápidos</h3>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../index.html#servicios">Servicios</a></li>
-          <li><a href="../index.html#planes">Planes</a></li>
-          <li><a href="../index.html#nosotros">Nosotros</a></li>
-          <li><a href="../pages/cotizaciones.html">Cotizaciones</a></li>
-          <li><a href="../pages/blog.html">Blog</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="pages/cotizaciones.html">Cotizaciones</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
         </ul>
       </div>
       <!-- Contacto -->
       <div class="footer-column">
         <h3>Contacto</h3>
-        <p>📞 +569 91 999 301</p>
+        <p>📞 +56 9 91999301</p>
         <p>✉️ <a href="mailto:salsaymiga@gmail.com">contacto@salsaymiga.cl</a></p>
         <p>📍 Santiago, Chile</p>
       </div>
@@ -319,13 +636,13 @@
       <div class="footer-column">
         <h3>Síguenos</h3>
         <div class="social-buttons">
-          <a href="https://www.instagram.com/salsaymiga" target="_blank" class="btn-social instagram">
+          <a href="https://www.instagram.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social instagram">
             <i class="fab fa-instagram"></i> Instagram
           </a>
-          <a href="https://www.facebook.com/salsaymiga" target="_blank" class="btn-social facebook">
+          <a href="https://www.facebook.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social facebook">
             <i class="fab fa-facebook-f"></i> Facebook
           </a>
-          <a href="https://www.twitter.com/salsaymiga" target="_blank" class="btn-social twitter">
+          <a href="https://www.twitter.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social twitter">
             <i class="fab fa-twitter"></i> Twitter
           </a>
         </div>
@@ -337,6 +654,23 @@
       © 2024 Salsa y Miga | Todos los derechos reservados.
     </div>
   </footer>
-<script src="../js/services-js.js"></script>>
+  </div>
+  <script src="../js/script.js"></script>
+  <script src="../js/services-js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

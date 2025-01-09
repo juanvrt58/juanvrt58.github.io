@@ -1,0 +1,195 @@
+
+
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .movile{
+        display: block;
+      }
+      .desktop{
+        display: none;
+      }
+    /* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  /* Sección Sobre Nosotros */
+  .nosotros-section {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    margin-top: 75px;
+  }
+  
+  .nosotros-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nosotros-section .section-title {
+    font-size: 2rem;
+    color: #900c3f;
+    margin-bottom: 10px;
+  }
+  
+  .nosotros-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .image-container {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  .nosotros-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  .card-title h3 {
+    font-size: 1.5rem;
+    color: #ff5733;
+    margin-top: 20px;
+  }
+  
+  .card-title p,
+  .card-title ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px 20px;
+  }
+  
+  .card-title ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card-title ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Sección Galería */
+  .galeria {
+    background-color: #f8f5f2;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .galeria h2 {
+    font-size: 2rem;
+    color: #900c3f;
+    margin-bottom: 20px;
+  }
+  
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .galeria-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .galeria-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .boton-ver-mas {
+    margin-top: 30px;
+  }
+  
+  .btn-ver-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #900c3f;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-ver-mas:hover {
+    background-color: #ff5733;
+  }
+  
+  
+    .nosotros-section .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .nosotros-section p {
+      font-size: 0.9rem;
+    }
+  
+    .nosotros-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      flex: 1;
+    }
+  
+    .card-title {
+      text-align: center;
+      padding: 0 15px;
+    }
+  
+    .card-title h3 {
+      font-size: 1.25rem;
+    }
+  
+    .card-title p,
+    .card-title ul {
+      font-size: 0.9rem;
+    }
+  
+    .galeria h2 {
+      font-size: 1.5rem;
+    }
+  
+    .grid-galeria {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+  
+    .galeria-item img {
+      height: 120px;
+    }
+  
+    .btn-ver-mas {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  

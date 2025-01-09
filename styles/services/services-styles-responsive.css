@@ -1,0 +1,446 @@
+@media (max-width: 768px) {
+    @font-face {
+        font-family: 'Yuji Boku';
+        src: url('fonts/YujiBoku.ttf') format('truetype');  /* Asegúrate de que el nombre y la ubicación coincidan */
+        font-weight: normal;
+        font-style: normal;
+      }
+      .movile{
+        display: block;
+      }
+      .desktop{
+        display: none;
+      }
+      /* General Styles */
+    
+    html{
+      max-width: 100%;
+    }
+    body{
+      max-width: 100%;
+    }
+    .navbar-salsa{
+      max-width: 100%;
+    }
+      
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas filas */
+        justify-content: center; /* Centra los elementos dentro del contenedor */
+        padding: 40px;
+        box-sizing: border-box;
+      
+      }
+      
+      .section-title {
+        font-size: 32px;
+        color: #900c3f;
+        margin-bottom: 20px;
+      }
+      
+      .section-description {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 40px;
+      }
+      
+      
+      .section-title {
+        font-size: 32px;
+        color: #900c3f;
+        margin-bottom: 20px;
+      }
+      
+      .section-description {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 40px;
+      }
+      
+      /* Esta etiqueta permite ocultar elementos */
+      .ocultar{
+        display:none;
+      }
+     /* * {
+        outline: 1px solid red; 
+      } */
+      .proximamente{
+        position:relative;
+        z-index: 10;
+        
+        background-color: red;
+        width:10%;
+        height: 50px;
+        text-align: center;
+      }
+      
+      /* Cinta diagonal Próximamente */
+      .coming-soon-ribbon {
+        position: absolute;
+        top: 15px;
+        left: 0px;
+        background: #990001;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 40px;
+        transform: rotate(0deg);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        ;
+        z-index: 10;
+      }
+      
+      .image-container {
+        flex: 1;
+        text-align: center;
+      }
+        /* Estilo del iframe */
+        iframe {
+          width: 100%;
+          height: 400px; /* Ajusta la altura del iframe */
+          border: none;
+        }
+      
+      
+      /* ****************************************************************/
+      /*               Botones */
+      /* ****************************************************************/
+      
+        /* Botón de WhatsApp */
+      .whatsapp-button {
+          display: inline-block;
+          background-color: #25d366;
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 0.2rem 1.0rem;
+          border-radius: 5px;
+          margin-top: 1rem;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          text-align: center;
+      }
+      
+      .whatsapp-button:hover {
+          background-color: #1ebe57;
+          transform: scale(1.05);
+      }
+      
+      .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: #990001;
+      }
+      
+      .btn-primary {
+        background: #990001;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+      }
+      
+      .btn-primary:hover {
+        transform: scale(1.2);
+        background: #fff;
+        color: #990001;
+      }
+      .btn-secondary {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+      }
+      
+      .btn-secondary:hover {
+        background: #fff;
+        color: #d35400;
+      }
+      
+      /* Contenedores de texto */
+      
+      .text-container {
+        flex: 2;
+        color: #333;
+      }
+      
+      .text-container h3 {
+        color: #ff5733;
+        margin-top: 20px;
+        font-size: 24px;
+      }
+      
+      .text-container p {
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+      
+      .text-container ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .text-container ul li {
+        margin: 5px 0;
+        font-size: 16px;
+      }
+      
+      .text-container ul li strong {
+        color: #900c3f;
+      }
+      
+      /* ****************************************************************/
+      /*                 Header general                   */
+      /* ****************************************************************/
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0px;
+        background: linear-gradient(to right, #990001, #900c3f);
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .plan-section {
+        max-width: 100%;
+        margin: 10px 0px;
+        padding: 0 70px;
+      }
+      
+      .plan-section h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #900c3f;
+      }
+      
+      .plan-section p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 40px;
+        text-align: justify;
+      }
+      
+      .plan-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      
+      .plan-card {
+        background: #fff;
+        padding: 20px;
+        width: 30%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: left;
+        position: relative;
+      }
+      
+      .plan-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      
+      .plan-card h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #900c3f;
+      }
+      
+      .plan-price {
+        font-size: 22px;
+        color: #ff5733;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      
+      .plan-card ul {
+        list-style: none;
+        margin-bottom: 20px;
+      }
+      
+      .plan-card ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      
+      .btn-plan {
+        background-color: #ff5733;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .btn-plan:hover {
+        background-color: #900c3f;
+      }
+      
+  
+        .plan-section {
+          padding: 0 20px;
+          margin: 80px 0px;
+        }
+      
+        .plan-section h2 {
+          font-size: 28px;
+        }
+      
+        .plan-section p {
+          font-size: 16px;
+          text-align: justify;
+        }
+      
+        .plan-cards {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+        }
+      
+        .plan-card {
+          width: 100%;
+          padding: 15px;
+        }
+      
+        .plan-card h3 {
+          font-size: 20px;
+        }
+      
+        .plan-price {
+          font-size: 18px;
+        }
+      
+        .plan-card ul li {
+          font-size: 14px;
+        }
+      
+        .btn-plan {
+          font-size: 14px;
+          padding: 8px 15px;
+        }
+       
+
+
+
+
+
+
+    
+      
+        .service-cards {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+          justify-items: center;
+        }
+      
+        .service-card {
+          position: relative;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          max-width: 280px;
+          text-align: left;
+          margin-bottom: 30px;
+        }
+      
+      .service-card:hover {
+          transform: scale(1.05);
+      }
+      
+        .service-card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-card h3 {
+          font-size: 1.8em;
+          color: #273E12;
+          margin: 15px 0;
+        }
+        
+        .service-card p {
+          font-size: 1em;
+          color: #666;
+          margin-top: 10px;
+        }
+        
+        .service-card img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 15px;
+        }
+        
+      
+        
+        /* Ajustes de las tarjetas destacadas */
+        .service-card.destacado {
+          border: 2px solid #273E12; /* Verde oscuro */
+          transform: scale(1.02);
+          margin-bottom: 30px;
+        }
+        
+        .service-card.destacado:hover {
+          transform: scale(1.08);
+          box-shadow: 0 10px 25px rgba(39, 62, 18, 0.3); /* Verde oscuro */
+        }
+        
+        
+        /* Estilos generales para la sección */
+      .services-section, .large-events {
+          margin: 2rem auto;
+          padding: 1.5rem;
+          max-width: 100%;
+          text-align: center;
+          background-color: #f9f9f9;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      
+      .service-img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+      }
+      
+      .service-title {
+          font-size: 1.5rem;
+          color: #273E12;
+          margin: 1rem;
+          font-weight: bold;
+      }
+      
+      .service-description {
+          font-size: 1rem;
+          color: #555;
+          padding: 0 1rem 1.5rem;
+      }
+      
+    
+    }
