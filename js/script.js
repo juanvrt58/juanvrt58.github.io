@@ -24,6 +24,12 @@
     */
 
 // Función para cerrar el modal
+
+document.querySelectorAll('.btn-cotizar').forEach(button => {
+    button.addEventListener('click', openModal);
+  });
+  
+  document.querySelector('.close-btn').addEventListener('click', closeModal);
 function closeModal() {
     const modal = document.querySelector('.modal');
     document.body.removeChild(modal);

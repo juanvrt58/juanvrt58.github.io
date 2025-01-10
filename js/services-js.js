@@ -7,13 +7,19 @@ var closeBtn = document.getElementsByClassName("close-btn")[0];
 // Abrir el modal (por ejemplo, con un botón)
 function openModal() {
   modal.style.display = "block";
+  alert("si funciona");
+
 }
 
 // Cerrar el modal cuando se haga clic en "Cerrar"
 closeBtn.onclick = function() {
   modal.style.display = "none";
 }
+document.querySelectorAll('.btn-cotizar').forEach(button => {
+  button.addEventListener('click', openModal);
+});
 
+document.querySelector('.close-btn').addEventListener('click', closeModal);
 // Cerrar el modal si se hace clic fuera de la ventana modal
 window.onclick = function(event) {
   if (event.target == modal) {
