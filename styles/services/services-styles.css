@@ -39,6 +39,21 @@ box-sizing: border-box;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  
+}
+.badge-2 {
+  position: absolute;
+  top: 4px;
+  left: 140px;
+  background-color: #990001; /* Verde oscuro */
+  color: #fff;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
 }
 /* Cinta "Próximamente" */
 .coming-soon-ribbon {
