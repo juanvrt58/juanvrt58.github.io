@@ -291,17 +291,47 @@
     </div>
   </section>
    
-  <!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <form>
-      <!-- Formulario de Google o tu contenido -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfMUIJldutif41Bjbcg7g2y7dzT4kRd2x-ND70ha7e2DaktQ/viewform?usp=header" title="google-form" width="100%" height="500px"></iframe>
-      <!-- Botón de cerrar -->
-      <button type="button" class="close-btn">Cerrar</button>
-    </form>
+<!-- Sección Preguntas -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Qué significa "Pizzas ilimitadas"? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Seleccionando el plan completo, tienes la opción de disfrutar junto a tus invitados de todas las pizzas que desees durante el tiempo que estemos ahí. Primero hacemos una ronda de pizzas, luego un break y luego volvemos a servir nuevamente pizzas para todos aquellos que todavía tienen hambre.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Puedo personalizar un plan según mis necesidades? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Sí, todos nuestros planes son personalizables. Contáctanos para que podamos adaptarlo a tus requerimientos según diponibilidad.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Cuánto tiempo antes debo reservar un evento? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Recomendamos hacer la reserva con al menos 5 días de anticipación para garantizar la disponibilidad.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Ofrecen servicios para eventos corporativos grandes? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Sí, contamos con el Plan Empresa para eventos corporativos grandes. Contáctanos con tiempo para planificar todos los detalles.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Qué métodos de pago aceptan? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Aceptamos transferencias bancarias. Para reservar tu evento, es importante depositar el anticipo correspondiente para reservar el servicio para el día de tu evento. No importa cuanto antes reserves, tu evento estará agendado y preparandose desde el día que reserves.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
       
       <!--Sección Footer-->
       <footer class="footer">
@@ -606,17 +636,8 @@
       </div>
     </section>
   
-               <!-- Modal -->
-               <div id="modal" class="modal">
-                <div class="modal-content">
-                  <form>
-                    <!-- Formulario de Google o tu contenido -->
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfMUIJldutif41Bjbcg7g2y7dzT4kRd2x-ND70ha7e2DaktQ/viewform?usp=header" title="google-form" width="100%" height="500px"></iframe>
-                    <!-- Botón de cerrar -->
-                    <button type="button" class="close-btn">Cerrar</button>
-                  </form>
-                </div>
-              </div>
+
+    
    <!-- Sección Preguntas -->
    <section id="faq" class="faq-section">
     <div class="container">
@@ -709,9 +730,21 @@
     </div>
   </footer>
   </div>
-
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Reserva tu evento</h2>
+      <p>Completa el siguiente formulario para continuar:</p>
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLScfMUIJldutif41Bjbcg7g2y7dzT4kRd2x-ND70ha7e2DaktQ/viewform?usp=header"
+        title="Formulario de Reserva"
+        width="100%"
+        height="300"
+        frameborder="0">
+      </iframe>
+      <button class="close-btn" onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
 </body>
-<script src="../js/script.js"></script>
 <script src="../js/services-js.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 

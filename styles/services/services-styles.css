@@ -355,7 +355,7 @@ line-height: 1.6;
 /*           Estilo general del modal */
 /******************************************************/
 .modal {
-    display: none; /* Ocultamos el modal por defecto */
+    display: block; /* Ocultamos el modal por defecto */
     position: fixed;
     z-index: 1;
     left: 0;

@@ -23,29 +23,9 @@
 }
     */
 
-// Función para cerrar el modal
 
-document.querySelectorAll('.btn-cotizar').forEach(button => {
-    button.addEventListener('click', openModal);
-  });
-  
-  document.querySelector('.close-btn').addEventListener('click', closeModal);
-function closeModal() {
-    const modal = document.querySelector('.modal');
-    document.body.removeChild(modal);
-    document.body.style.overflow = 'auto'; // Rehabilitar el scroll
 
-}
 
-// Función para cerrar el modal
-function closeModal() {
-    const modal = document.querySelector('.modal');
-    if (modal) {
-        modal.remove();
-        document.body.style.overflow = 'auto'; // Reactiva scroll
-    }
-}
-//Esto es lo que suaviza el menú flotante
 document.querySelectorAll('.floating-menu a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -74,4 +54,3 @@ document.querySelectorAll('.faq-question').forEach(button => {
       });
     });
   });
-  
