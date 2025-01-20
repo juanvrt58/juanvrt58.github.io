@@ -1,104 +1,43 @@
-.blog-container, .blog-entry-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-}
 
-.blog-entry {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
 
-.blog-entry img {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-}
-
-.blog-info h2 a {
-    text-decoration: none;
-    color: #990001;
-}
-
-.blog-info p {
-    color: #333;
-}
-
-.blog-entry-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-h1, h2 {
-    color: #990001;
-}
-
-/* Estilo para la sección de los Fundadores */
-.about-us {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    padding: 20px;
-}
-
-/* Estilo para la imagen de los Fundadores */
-.img-fundadores {
-    width: 300px;  /* Ajusta el tamaño de la imagen */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-right: 20px;
-}
-
-/* Contenedor para la imagen y el texto */
-.fundadores-contenedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-/* Ajustes de estilo del texto */
-.about-us p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 600px; /* Puedes ajustar esto para el ancho del texto */
-    color: #333;
-}
-
-/* Sección Nosotros */
+/* Blog */
 .main-content {
     padding: 20px;
 }
 
-
-
-.about-us h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-
-
-.history, .mission-vision, .values {
+.blog-posts {
     background-color: #fff;
     padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.history h2, .mission-vision h2, .values h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+.blog-posts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.values ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.blog-post h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -115,28 +54,192 @@ footer {
         align-items: center;
     }
 }
-.btn-plan {
-    display: block;
-    text-align: center;
-    background: #900c3f;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
 
-  /* Estilo para la imagen de portada */
-.portada {
-    width: 100%;
-    height: 500px; /* Puedes ajustar la altura según lo necesites */
-    overflow: hidden;
-    position: relative;
+
+
+
+/* Footer general */
+.footer {
+  background: linear-gradient(to right, #8e1b1b, #6b1313); /* Tonos más oscuros y suaves */
+  color: #f1e3d3; /* Color claro pero suave */
+  padding: 30px 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
 }
 
-.img-portada {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra toda el área sin distorsionarse */
-    object-position: center; /* Centra la imagen */
+.footer h3 {
+  color: #ffdd00; /* Amarillo para destacar títulos */
+  margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+  color: #f1e3d3;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffdd00;
+}
+
+/* Enlaces rápidos y contacto */
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+/* Redes sociales */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-social i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.instagram {
+  background-color: #e6683c;
+  color: #fff;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.twitter {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.btn-social:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Línea divisora */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+/* Derechos reservados */
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #d8cfc4;
+}
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+.header {
+    background: linear-gradient(to right, #990001, #900c3f);
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-family: 'Yuji Boku', serif;
+    font-size: 1.8rem;
+    color: #ffdd00;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background: #ffdd00;
+    color: #900c3f;
+}
+
+.blog-title {
+    font-size: 2rem;
+    font-family: 'Yuji Boku', serif;
+    color: #990001;
+    margin-bottom: 15px;
+}
+
+.widget h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #900c3f;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.widget ul li a:hover {
+    color: #990001;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
 }
