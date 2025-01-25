@@ -7,11 +7,12 @@
     <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    
   </url>
 
   <!-- Nosotros -->
   <url>
-    <loc>http://www.salsaymiga.cl//pages/nosotros.html</loc>
+    <loc>http://www.salsaymiga.cl/pages/nosotros.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
