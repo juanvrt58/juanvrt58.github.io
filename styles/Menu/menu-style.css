@@ -1,135 +1,120 @@
-
-.desktop{
-    display:block;
-}
-.movile{
-    display:none;
-}
-/* menu.css */
-
-/* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Raleway:wght@400;600&display=swap');
-
+/* General */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #3e3e3e;
+  background-color: #fdfdfd;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
 }
-
-.menu {
-    margin-top: 60px;
-  padding: 80px 10%;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+.menu{
+  margin-top:60px;
 }
 
 .seccion {
-  margin-bottom: 60px;
-  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-.seccion h2 {
-    color: #990001;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+h2 {
+  font-size: 2.5rem;
+  color: #990001;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
 .pizza-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .pizza-item {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .pizza-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilo para pizzas vegetarianas */
-.pizza-item.vegetariana {
-  border-left: 8px solid #273E12;
-  background:  #EABC7A;
-}
-
-/* Estilo para pizzas con carne */
-.pizza-item.carne {
-  border-left: 8px solid #990001;
-  background:  #EABC7A;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .pizza-item h3 {
-  font-family: 'Yuji Boku', serif;
-  font-size: 20px;
-  color: #990001;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #273e12;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .pizza-item p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1rem;
   color: #555;
+  text-align: center;
+  line-height: 1.6;
 }
 
-/* Decoraciones laterales */
 .decoraciones {
-  display: flex;
-  justify-content: space-around;
-  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .decoraciones img {
-  width: 100px;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .decoraciones img:hover {
   transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* Colores por tipo */
+.pizza-item.carne {
+  border-color: rgba(153, 0, 1, 0.7); /* Rojo para carne */
 }
 
-/* menu-responsivo.css */
-
+.pizza-item.vegetariana {
+  border-color: rgba(39, 62, 18, 0.7); /* Verde para vegetariana */
+}
+/* Responsividad */
 @media (max-width: 768px) {
-  .menu {
-    padding: 40px 5%;
-  }
-
-  .seccion h2 {
-    font-size: 28px;
-  }
-
   .pizza-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
   }
 
   .pizza-item {
-    padding: 15px;
+    padding: 1rem;
   }
 
   .pizza-item h3 {
-    font-size: 18px;
+    font-size: 1.3rem;
   }
 
   .pizza-item p {
-    font-size: 14px;
-  }
-
-  .decoraciones img {
-    width: 80px;
+    font-size: 0.9rem;
   }
 }

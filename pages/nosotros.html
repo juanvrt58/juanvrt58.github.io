@@ -37,14 +37,12 @@
     <title>Salsa y Miga</title>
     
     <link rel="stylesheet" href="../styles/nosotros/nosotros-styles.css">
-    <link rel="stylesheet" href="../styles/nosotros/nosotros-styles-responsive.css">
    
 
     <link rel="stylesheet" href="../recursos/footer.css">
     <link rel="stylesheet" href="../recursos/footer-responsive.css">
 
     <link rel="stylesheet" href="../recursos/nav.css">
-    <link rel="stylesheet" href="../recursos/nav-responsive.css">
 
     <!--Links externos-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Yuji+Boku&display=swap" rel="stylesheet">
@@ -59,9 +57,9 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPM9KBKB"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    <div class="desktop">
+ 
       <!-- Header -->
-       <header class="header">
+      <header class="header">
         <div class="logo">
           <h1>Salsa y Miga</h1>
         </div>
@@ -77,24 +75,66 @@
         </nav>
       </header>
       
+      <header class="header-salsa">
+        <div class="logo-salsa">
+          <h1>Salsa y Miga</h1>
+        </div>
+        <nav class="navbar-salsa">
+          <!-- Botón para activar el menú móvil -->
+          <button class="navbar-toggler-salsa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-salsa">☰</span>
+          </button>
       
-      <main class="main-content">
-        <section class="about-us">
-            <div class="container">
-                <div class="row">
-                    <!-- Imagen de los fundadores -->
-                    <div class="col-md-6">
-                        <img src="../img/galeria/19.jpg" alt="Juan y Nicolás" class="img-fundadores">
-                    </div>
-                    <!-- Texto sobre los fundadores -->
-                    <div class="col-md-6">
-                        <h2>Conoce a los Fundadores</h2>
-                        <p>Somos Juan y Nicolás, los creadores de <strong>Salsa y Miga</strong>. Nuestra pasión por la cocina, el buen servicio, y las ganas de emprender, nos ha llevado a crear este servicio con el objetivo de transformar cada evento en una experiencia memorable.</p>
-                        <p>Desde el principio, nuestra filosofía ha sido clara: Queremos entregar el mejor servicio. Queremos que el cliente se sienta cómodo, y con la tranquilidad de que a la hora de reservar, su evento va a salir tal cual lo planeado. Todas nuestras opciones se pueden modificar, agregar o quitar cosas, simplificar o aumentar. No dudes en comentarnos lo que tengas planeado para tu evento.</p>
-                    </div>
+          <!-- Menú desplegable -->
+          <div class="collapse navbar-collapse-salsa" id="navbarMenu">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="services.html">Servicios</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="menu.html">Menú</a></li>
+              <li><a href="cotizaciones.html">Cotizar</a></li>
+              <li><a href="galeriasym.html">Galería</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+      
+      <section id="nosotros" class="nosotros-section">
+        <div class="container">
+            <h2 class="section-title">Acerca de Salsa y Miga</h2>
+            <div class="nosotros-content">
+                <!-- Imagen de los fundadores -->
+                <div class="image-container">
+                    <img src="../img/web/JuanyNico.jpg" alt="Equipo de Salsa y Miga" class="nosotros-image">
+                </div>
+                <!-- Texto sobre la historia y valores -->
+                <div class="card-title">
+                    <h3>Sobre nosotros</h3>
+                    <p>
+                        Somos Juan y Nicolás, dos apasionados por la cocina y el arte de crear momentos únicos. Desde los inicios de 
+                        <strong>Salsa y Miga</strong>, nuestro objetivo ha sido llevar sabores auténticos y experiencias inolvidables a cada evento. 
+                        A lo largo de los años, hemos perfeccionado nuestras recetas y servicios para satisfacer los gustos y necesidades de nuestros clientes.
+                    </p>
+                    <h3>Nuestra Misión</h3>
+                    <p>
+                        Transformar eventos en experiencias memorables, ofreciendo servicios de catering y banquetería de la más alta calidad, adaptados a cada cliente.
+                    </p>
+                    <h3>Nuestra Visión</h3>
+                    <p>
+                        Ser reconocidos como líderes en el mercado de catering y banquetería, destacándonos por nuestra creatividad, atención al detalle y compromiso con la excelencia.
+                    </p>
+                    <h3>Nuestros Valores</h3>
+                    <ul>
+                        <li><strong>Pasión:</strong> Amamos lo que hacemos y se refleja en cada detalle.</li>
+                        <li><strong>Innovación:</strong> Nos reinventamos constantemente para superar expectativas.</li>
+                        <li><strong>Compromiso:</strong> Con nuestros clientes, el medio ambiente y la calidad.</li>
+                        <li><strong>Trabajo en equipo:</strong> Cada evento es el resultado de un esfuerzo conjunto.</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     
         <section class="history">
             <div class="container">
@@ -219,164 +259,12 @@
           © 2024 Salsa y Miga | Todos los derechos reservados.
         </div>
       </footer>
-      
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="movile">
-  <!-- Header -->
-  <header class="header-salsa">
-    <div class="logo-salsa">
-      <h1>Salsa y Miga</h1>
-    </div>
-    <nav class="navbar-salsa">
-      <!-- Botón para activar el menú móvil -->
-      <button class="navbar-toggler-salsa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon-salsa">☰</span>
-      </button>
-  
-      <!-- Menú desplegable -->
-      <div class="collapse navbar-collapse-salsa" id="navbarMenu">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="services.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="menu.html">Menú</a></li>
-          <li><a href="cotizaciones.html">Cotizar</a></li>
-          <li><a href="galeriasym.html">Galería</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  
-        
-        <!--  Sección "Sobre Nosotros" -->
-        <section id="nosotros" class="nosotros-section">
-          <div class="container">
-              <h2 class="section-title">Acerca de Salsa y Miga</h2>
-              <p>
-                Conoce un poco más sobre nosotros
-              </p>
-              <div class="nosotros-content">
-                  <!-- Imagen de los fundadores -->
-                  <div class="image-container">
-                      <img src="../img/web/JuanyNico.jpg" alt="Equipo de Salsa y Miga" class="nosotros-image">
-                  </div>
-                  <!-- Texto sobre la historia y valores -->
-                  <div class="card-title">
-                      <h3>Sobre nosotros</h3>
-                      <p>
-                          Somos Juan y Nicolás, dos apasionados por la cocina y el arte de crear momentos únicos. Desde los inicios de 
-                          <strong>Salsa y Miga</strong>, nuestro objetivo ha sido llevar sabores auténticos y experiencias inolvidables a cada evento. 
-                          A lo largo de los años, hemos perfeccionado nuestras recetas y servicios para satisfacer los gustos y necesidades de nuestros clientes.
-                      </p>
-                      <h3>Nuestra Misión</h3>
-                      <p>
-                          Transformar eventos en experiencias memorables, ofreciendo servicios de catering y banquetería de la más alta calidad, adaptados a cada cliente.
-                      </p>
-                      <h3>Nuestra Visión</h3>
-                      <p>
-                          Ser reconocidos como líderes en el mercado de catering y banquetería, destacándonos por nuestra creatividad, atención al detalle y compromiso con la excelencia.
-                      </p>
-                      <h3>Nuestros Valores</h3>
-                      <ul>
-                          <li><strong>Pasión:</strong> Amamos lo que hacemos y se refleja en cada detalle.</li>
-                          <li><strong>Innovación:</strong> Nos reinventamos constantemente para superar expectativas.</li>
-                          <li><strong>Compromiso:</strong> Con nuestros clientes, el medio ambiente y la calidad.</li>
-                          <li><strong>Trabajo en equipo:</strong> Cada evento es el resultado de un esfuerzo conjunto.</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </section>
-             
-
-  <!-- Sección de Galería -->
-  <section id="galeria" class="galeria">
-    <div class="contenedor-galeria">
-        <h2>Archivo Eventos Salsas y Miga</h2>
-        <div class="grid-galeria">
-            <!-- Imágenes de la galería -->
-            <div class="galeria-item"><img src="../img/imgss/IMG_8921.jpg" alt="Evento 1"></div>
-            <div class="galeria-item"><img src="../img/imgss/IMG_8884.jpg" alt="Evento 2"></div>
-            <div class="galeria-item"><img src="../img/imgss/IMG_8931.jpg" alt="Evento 3"></div>
-            <div class="galeria-item"><img src="../img/imgss/IMG_8947.jpg" alt="Evento 4"></div>
-          
-            <div class="galeria-item"><img src="../img/imgss/IMG_9027.jpg" alt="Evento 8"></div>
-            <div class="galeria-item"><img src="../img/imgss/IMG_9070.jpg" alt="Evento 9"></div>
-        </div>
-        <!-- Botón para ver más fotos -->
-        <div class="boton-ver-mas">
-            <a href="galeriasym.html" class="btn-ver-mas">Ver Más Fotos</a>
-        </div>
-    </div>
-  </section>
-
-  
-  
-  <!--Sección Footer-->
-  <footer class="footer">
-    <div class="footer-columns">
-      <!-- Información principal -->
-      <div class="footer-column">
-        <h3>Salsa y Miga</h3>
-        <p>Tu aliado en la creación de eventos inolvidables, con servicios de catering, banquetería y más.</p>
-      </div>
-      <!-- Enlaces rápidos -->
-      <div class="footer-column">
-        <h3>Enlaces rápidos</h3>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="services.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="cotizaciones.html">Cotizaciones</a></li>
-          <li><a href="menu.html">Menú</a></li>
-        </ul>
-      </div>
-      <!-- Contacto -->
-      <div class="footer-column">
-        <h3>Contacto</h3>
-        <p>📞 +56 9 91999301</p>
-        <p>✉️ <a href="mailto:salsaymiga@gmail.com">contacto@salsaymiga.cl</a></p>
-        <p>📍 Santiago, Chile</p>
-      </div>
-      <!-- Redes sociales -->
-      <div class="footer-column">
-        <h3>Síguenos</h3>
-        <div class="social-buttons">
-          <a href="https://www.instagram.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social instagram">
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
-          <a href="https://www.facebook.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social facebook">
-            <i class="fab fa-facebook-f"></i> Facebook
-          </a>
-          <a href="https://www.twitter.com/salsaymiga" rel="noopener noreferrer" target="_blank" class="btn-social twitter">
-            <i class="fab fa-twitter"></i> Twitter
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-divider"></div>
-    <!-- Derechos reservados -->
-    <div class="footer-bottom">
-      © 2024 Salsa y Miga | Todos los derechos reservados.
-    </div>
-  </footer>
-  </div>
+    </body>
   <script src="../js/script.js"></script>
   <script src="../js/services-js.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+
 </html>
 
 

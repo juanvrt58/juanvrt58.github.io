@@ -1,4 +1,49 @@
 
+
+/* Estilos para el menú móvil */
+@media (max-width: 767px) {
+  .navbar{
+    display: none;
+  }
+  .navbar-salsa {
+    flex-direction: column;
+    align-items: flex-start;
+    display:none;
+  }
+
+  .collapse {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar-collapse-salsa ul {
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .navbar-collapse-salsa li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .navbar-collapse-salsa a {
+    color: #EABC7A;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-collapse-salsa a:hover {
+    background-color: #ffdd00;
+    color: #900c3f;
+    box-shadow: none;
+  }
+  
 /* Header */
 .header-salsa {
   display: flex;
@@ -102,46 +147,6 @@
 .navbar-toggler-salsa {
   margin-left: auto; /* Esto lo alinea a la derecha */
 }
-
-/* Estilos para el menú móvil */
-@media (max-width: 767px) {
-  .navbar-salsa {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .collapse {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .navbar-collapse-salsa ul {
-    flex-direction: column;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .navbar-collapse-salsa li {
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .navbar-collapse-salsa a {
-    color: #EABC7A;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 12px;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-collapse-salsa a:hover {
-    background-color: #ffdd00;
-    color: #900c3f;
-    box-shadow: none;
-  }
 }
 
 /* Asegurar que el contenido principal no quede cubierto por el header */

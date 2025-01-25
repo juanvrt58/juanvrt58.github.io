@@ -1,10 +1,4 @@
 
-.movile{
-  display: none;
-}
-.desktop{
-  display: block;
-}
 body {
   font-family: 'Raleway', sans-serif;
   color: #333;
@@ -68,6 +62,47 @@ box-sizing: border-box;
   border-radius: 30px;
 }
 
+/**********************************************/
+/* Hero section * /
+/*********************************************/
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: 'Yuji Boku', serif;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+/******************************************/
+/***************Content Styles **************/
+/******************************************/
 
 
 .section-title {
@@ -149,9 +184,10 @@ line-height: 1.6;
 /***************************************************/
 
 .plan-section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 110px 0px;
   padding: 0 70px;
+  align-self: center;
 }
 
 .plan-section h2 {
@@ -197,7 +233,7 @@ line-height: 1.6;
 .plan-card h3 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #900c3f;
+  color: #990001;
 }
 
 .plan-price {
@@ -218,7 +254,7 @@ line-height: 1.6;
 }
 
 .btn-plan {
-  background-color: #ff5733;
+  background-color: #990001;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -229,18 +265,18 @@ line-height: 1.6;
 }
 
 .btn-plan:hover {
-  background-color: #900c3f;
+  background-color: #d35400;
 }
   /*******************************************************/
   /*                   Services                */
   /*************************************************/
-  .service-section {
-    max-width: 1200px;
-    margin: 110px 0px;
-    padding: 0 70px;
-  }
-  
 
+    /* Estilos generales para la sección */
+
+.service-section {
+  margin: 110px 0px;
+  padding: 0 70px;
+}
   .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -260,9 +296,7 @@ line-height: 1.6;
     text-align: left;
   }
 
-.service-card:hover {
-    transform: scale(1.05);
-}
+
 
   .service-card:hover {
     transform: scale(1.05);
@@ -302,16 +336,7 @@ line-height: 1.6;
   }
   
   
-  /* Estilos generales para la sección */
-.services-section, .large-events {
-    margin: 2rem auto;
-    padding: 1.5rem;
-    max-width: 1200px;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 
 .service-img {
@@ -333,21 +358,6 @@ line-height: 1.6;
     padding: 0 1rem 1.5rem;
 }
 
-
-/**********************************************/
-/*          Sección de eventos grandes */
-/**************************************/
-.large-events {
-    margin-top: 3rem;
-    padding: 2rem;
-    background-color: #eabc7a;
-    border-radius: 10px;
-    color: #000;
-}
-
-.large-events .section-title {
-    color: #000;
-}
 
 
 
@@ -470,4 +480,174 @@ line-height: 1.6;
 
 .faq-item.open .faq-icon {
   transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  @font-face {
+      font-family: 'Yuji Boku';
+      src: url('fonts/YujiBoku.ttf') format('truetype');  /* Asegúrate de que el nombre y la ubicación coincidan */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+  
+    
+    .image-container {
+      flex: 1;
+      text-align: center;
+    }
+  
+    
+    
+    /* ****************************************************************/
+    /*               Botones */
+    /* ****************************************************************/
+    
+
+    .btn-primary {
+      background: #990001;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: scale(1.2);
+      background: #fff;
+      color: #990001;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    
+    .btn-secondary:hover {
+      background: #fff;
+      color: #d35400;
+    }
+    
+  /* ****************************************************************/
+    /*               Contenedores de texto */
+    /* ****************************************************************/
+
+    
+    /* ****************************************************************/
+    /*                 Sección de Planes                   */
+    /* ****************************************************************/
+
+    .plan-section {
+      margin: 10px 0px;
+   
+    }
+    
+      .plan-cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+    
+      .plan-card {
+        width: 100%;
+        padding: 15px;
+      }
+    
+      .plan-card ul li {
+        font-size: 14px;
+      }
+    
+      .btn-plan {
+        font-size: 14px;
+        padding: 8px 15px;
+      }
+     
+  /*******************************************************/
+  /*                   Services                */
+  /*************************************************/
+         
+    .services-cards{
+      display:grid;
+      
+    }
+      .service-card {
+ 
+        margin-bottom: 30px;
+      }
+    
+  
+      
+      /* Ajustes de las tarjetas destacadas */
+      .service-card.destacado {
+        margin-bottom: 30px;
+      }
+    
+  
+
+  /* ********************************************* */
+/*           Estilo general del modal */
+/******************************************************/
+
+/* Contenido del modal */
+.modal-content {
+margin: auto;
+
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+width: 90%; /* Ancho para móviles */
+max-width: 500px; /* Tamaño máximo */
+position: relative; /* Para posicionar el botón de cierre */
+text-align: center;
+}
+
+/* Botón "Cerrar" */
+.close-btn {
+background-color: #EABC7A; /* Naranja */
+color: white;
+font-size: 1rem;
+font-weight: bold;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+position: absolute;
+bottom: 20px; /* Ubica el botón en la parte inferior */
+left: 50%;
+transform: translateX(-50%); /* Centra el botón */
+transition: background-color 0.3s ease;
+}
+
+/* Hover para el botón */
+.close-btn:hover {
+background-color: #990001; /* Rojo intenso */
+}
+
+/* Ajuste del modal en pantallas pequeñas */
+.modal-content {
+  padding: 15px;
+  width: 95%; /* Más ancho para aprovechar el espacio */
+}
+
+.close-btn {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
 }

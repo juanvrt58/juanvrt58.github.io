@@ -1,13 +1,3 @@
-    /* RESET GENERAL */
-    .desktop{
-      display: block;
-    }    
-    .movile{
-      display:none;
-    }
-  
-
-
 
        /* SECCIÓN GALERÍA */
 .galeria {
@@ -48,4 +38,44 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-       
+@media (max-width: 768px) {
+
+.galeria {
+    padding: 30px 10px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.galeria h2 {
+    color: #990001;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.galeria h6{
+  margin-bottom: 40px;
+}
+/* GRID GALERÍA */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Se adapta a la pantalla y tamaño de las imágenes */
+    gap: 15px; /* Espacio entre las imágenes */
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* Estilos para las imágenes */
+.galeria-item img {
+    width: 100%;
+    height: auto; /* Mantiene la relación de aspecto original */
+    object-fit: cover; /* Las imágenes cubrirán el área del contenedor sin deformarse */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+}
