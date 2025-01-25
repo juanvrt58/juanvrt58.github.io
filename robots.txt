@@ -11,4 +11,4 @@ Allow: /pages/menu.html
 Allow: /pages/galeriasym.html
 
 # Enlace al sitemap (opcional, si tienes un sitemap.xml generado)
-# Sitemap: https://www.salsaymiga.cl/sitemap.xml
+Sitemap: http://www.salsaymiga.cl/sitemap.xml
