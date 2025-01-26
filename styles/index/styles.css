@@ -90,10 +90,26 @@ body {
 /*               Botones */
 /* ****************************************************************/
 
+.btn-cotizar {
+  display: inline-block;
+  background-color: #990001;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.btn-cotizar:hover {
+  background-color: #731000;
+  transform: scale(1.05);
+}
 .btn-ver-mas {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 90px;
   background-color: #990001;
   color: #fff;
   font-weight: bold;
@@ -437,6 +453,129 @@ body {
   box-sizing: border-box;
 }
 
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+
+.service-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 270px;
+  text-align: left;
+}
+
+
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  font-size: 1.8em;
+  color: #273E12;
+  margin: 15px 0;
+}
+
+.service-card p {
+  font-size: 1em;
+  color: #666;
+  margin-top: 10px;
+  display:none;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.service-image {
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 10px; /* Añade un margen si es necesario */
+
+}
+
+
+
+/* Ajustes de las tarjetas destacadas */
+.service-card.destacado {
+  border: 2px solid #273E12; /* Verde oscuro */
+  transform: scale(1.02);
+  
+}
+
+.service-card.destacado:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(39, 62, 18, 0.3); /* Verde oscuro */
+}
+
+
+
+
+
+.service-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  color: #273E12;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 1rem 1.5rem;
+}
+
+
+/* Destacados */
+.badge {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  background-color: #273E12; /* Verde oscuro */
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+}
+.badge-2 {
+  position: absolute;
+  top: 4px;
+  left: 140px;
+  background-color: #990001; /* Verde oscuro */
+  color: #fff;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+}
+
+
+
+
 .service-list {
   display: flex;
   justify-content: space-around;
@@ -539,20 +678,7 @@ margin-bottom: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
-  /* Servicios Destacados */
-  .badge {
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    background-color: #273E12; /* Verde oscuro */
-    color: #fff;
-    font-size: 0.9em;
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+
 /* Ajustes de las tarjetas destacadas */
 .service-card.destacado {
   border: 2px solid white; /* Verde oscuro */
@@ -563,7 +689,6 @@ margin-bottom: 10px;
   transform: scale(1.08);
   box-shadow: 0 10px 25px rgba(39, 62, 18, 0.3); /* Verde oscuro */
 }
-
 /* ****************************************************************/
 /*                     Seccion Planes */
 /* ***************************************************************
@@ -981,24 +1106,7 @@ margin:0px 40px;
     /* ****************************************************************/
  
     /* Header */
-.header-salsa {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 10px;
-  background: linear-gradient(to right, #990001, #900c3f);
-  color: #b29c9c;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto; /* Esto centra el header */
-  width: 90%; /* Ajusta el ancho según sea necesario */
-  z-index: 1000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 5px;
-}
-    
+
     /* ****************************************************************/
     /*               Sección Hero Section */
     /* ****************************************************************/
