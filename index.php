@@ -105,10 +105,8 @@
           <!-- Hero Section -->
           <header id="inicio" class="hero-section">
               <div class="hero-content">
-                <h1 class="hero-title">Somos la mejor decisión para tu evento</h1>
-                <p class="hero-subtitle">
-                  Deléitate con nuestras pizzas napolitanas, aperitivos únicos y servicio de catering profesional. ¡Creamos momentos inolvidables!
-                </p>
+              <h1>¡Lleva la Auténtica Experiencia de la Pizza Napolitana a Tu Hogar!</h1>
+              <p>En Salsa y Miga, transformamos tus celebraciones en momentos inolvidables con nuestro servicio de catering de pizzas napolitanas artesanales, preparadas en el momento con ingredientes de la más alta calidad.</p>
                 <div class="d-flex gap-3">
                   <a class="btn-primary" href="pages/services.php">Ver Planes</a>
                   <a class="btn btn-secondary" href="pages/cotizaciones.php">Cotizar Evento</a>

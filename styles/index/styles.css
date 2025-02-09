@@ -353,8 +353,7 @@ body {
  /* ****************************************************************/
 /* =========================== */
 /* 🎉 SECCIÓN EVENTOS TEMÁTICOS */
-/* =========================== */
-/* 📌 Sección de Eventos */
+/* 📌 SECCIÓN EVENTOS */
 .eventos-section {
   text-align: center;
   padding: 50px 20px;
@@ -367,25 +366,23 @@ body {
   margin-bottom: 30px;
 }
 
-/* 📌 Contenedor de las Tarjetas */
+/* 📌 CONTENEDOR DE TARJETAS (AHORA CON GRID) */
 .eventos-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-/* 📌 Tarjetas */
+/* 📌 TARJETAS */
 .card {
   background: white;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 270px;
-  flex: 1;
   transition: transform 0.3s;
 }
 
@@ -393,14 +390,14 @@ body {
   transform: scale(1.05);
 }
 
-/* 📌 Imágenes */
+/* 📌 IMÁGENES */
 .card img {
   width: 100%;
-  height: 180px;
+  height: auto;
   object-fit: cover;
 }
 
-/* 📌 Contenido */
+/* 📌 CONTENIDO DE LAS TARJETAS */
 .card-content {
   padding: 15px;
 }
@@ -416,7 +413,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* 📌 Botón Cotizar */
+/* 📌 BOTÓN "COTIZAR" */
 .btn-cotizar {
   display: inline-block;
   background: #990001;
@@ -432,21 +429,21 @@ body {
   background: #700000;
 }
 
-/* 📱 Responsividad */
+/* 📱 RESPONSIVIDAD MEJORADA */
 @media (max-width: 1024px) {
   .eventos-container {
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-
-  .card {
-      max-width: 45%;
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
   }
 }
 
 @media (max-width: 768px) {
+  .eventos-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+  }
+
   .card {
-      max-width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
   }
 }
 
