@@ -351,60 +351,104 @@ body {
 /*             Daracteristica de Salsa y miga
 /******************************************************************/
  /* ****************************************************************/
- .caracteristicas-section {
-  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
-  padding: 60px 10%;
+/* =========================== */
+/* 🎉 SECCIÓN EVENTOS TEMÁTICOS */
+/* =========================== */
+/* 📌 Sección de Eventos */
+.eventos-section {
   text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
 }
 
+.eventos-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
-.caracteristicas-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* 📌 Contenedor de las Tarjetas */
+.eventos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.caracteristica-item {
-  background-color: #fff;
-  border: 2px solid #EABC7A;
-  padding: 20px;
+/* 📌 Tarjetas */
+.card {
+  background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 270px;
+  flex: 1;
+  transition: transform 0.3s;
 }
 
-.caracteristica-item:hover {
+.card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.caracteristica-item h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.8rem;
-  color: #900c3f;
+/* 📌 Imágenes */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* 📌 Contenido */
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
   margin-bottom: 15px;
 }
 
-.caracteristica-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-  text-align: justify;
+/* 📌 Botón Cotizar */
+.btn-cotizar {
+  display: inline-block;
+  background: #990001;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-.caracteristicas-descripcion {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 30px;
-  background-color: #ddd;
-  border: 2px;
-  padding: 20px;
-  border-radius: 10px;
-
+.btn-cotizar:hover {
+  background: #700000;
 }
 
+/* 📱 Responsividad */
+@media (max-width: 1024px) {
+  .eventos-container {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .card {
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      max-width: 100%;
+  }
+}
 
 
 /* ****************************************************************/
@@ -689,6 +733,228 @@ margin-bottom: 10px;
   transform: scale(1.08);
   box-shadow: 0 10px 25px rgba(39, 62, 18, 0.3); /* Verde oscuro */
 }
+
+
+
+
+
+
+
+/****************************/
+/*        Por que elegirnos */
+/*****************************/
+
+/* 📌 SECCIÓN ¿POR QUÉ ELEGIRNOS? */
+.porque-elegirnos {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.porque-elegirnos h2 {
+  font-size: 28px;
+  color: #990001;
+  margin-bottom: 15px;
+}
+
+.porque-elegirnos p {
+  font-size: 18px;
+  color: #333;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* 📌 CONTENEDOR DE RAZONES */
+.razones-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 📌 CADA RAZÓN */
+.razon {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 250px;
+  flex: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.razon:hover {
+  transform: scale(1.05);
+}
+
+/* 📌 ÍCONOS */
+.razon i {
+  font-size: 40px;
+  color: #990001;
+  margin-bottom: 10px;
+}
+
+/* 📌 TEXTOS */
+.razon h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.razon p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 1024px) {
+  .razones-container {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .razon {
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .razon {
+      max-width: 100%;
+  }
+}
+
+
+/* ======================== */
+/* 📝 FORMULARIO DE COTIZACIÓN */
+/* ======================== */
+
+.form-container {
+  background-color: white;
+  width: 60%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* 📌 RADIO BUTTONS Y CHECKBOXES */
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* 📌 CAPTCHA */
+.g-recaptcha {
+  margin-bottom: 20px;
+}
+
+/* 📌 SECCIÓN SELECCIÓN DE PIZZAS */
+.pizzas-selection {
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.pizzas-selection legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #990001;
+}
+
+/* 📌 SCROLL EN SELECCIÓN */
+.checkbox-group.scrollable {
+  max-height: 200px; /* Ajusta la altura del contenedor */
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+}
+
+/* 📌 CHECKBOXES MEJORADOS */
+.checkbox-group label {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* 📌 ESTILO DE NOMBRES Y DESCRIPCIONES */
+.pizza-nombre {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #990001;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 📌 CONFIRMACIÓN DE SELECCIÓN */
+.seleccion-confirmacion {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+
+
+
+.btn-cotizar {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ****************************************************************/
 /*                     Seccion Planes */
 /* ***************************************************************

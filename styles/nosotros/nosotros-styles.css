@@ -24,6 +24,21 @@ body {
     margin-top:60px;
   }
   
+
+
+
+
+
+  .btn-cotizar {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
   /***************************************************/
   /* Botones Generales */
   /***************************************************/

@@ -4,11 +4,8 @@ Disallow: /img/
 Disallow: /recursos/
 
 # Permite el acceso a las páginas principales
-Allow: /index.html
-Allow: /pages/nosotros.html
-Allow: /pages/services.html
-Allow: /pages/menu.html
-Allow: /pages/galeriasym.html
+Allow: /index.php
+
 
 # Enlace al sitemap (opcional, si tienes un sitemap.xml generado)
-Sitemap: http://www.salsaymiga.cl/sitemap.xml
+Sitemap: https://www.salsaymiga.cl/sitemap.xml

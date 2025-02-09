@@ -3,8 +3,8 @@
 
   <!-- Página principal -->
   <url>
-    <loc>http://www.salsaymiga.cl/index.html</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://www.salsaymiga.cl/index.php</loc>
+   <lastmod>2025-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
@@ -12,32 +12,32 @@
 
   <!-- Nosotros -->
   <url>
-    <loc>http://www.salsaymiga.cl/pages/nosotros.html</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://www.salsaymiga.cl/pages/nosotros.html</loc>
+  <lastmod>2025-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Servicios -->
   <url>
-    <loc>http://www.salsaymiga.cl/pages/services.html</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://www.salsaymiga.cl/pages/services.php</loc>
+<lastmod>2025-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Menú -->
   <url>
-    <loc>http://www.salsaymiga.cl/pages/menu.html</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://www.salsaymiga.cl/pages/menu.html</loc>
+<lastmod>2025-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <!-- Galería -->
   <url>
-    <loc>http://www.salsaymiga.cl/pages/galeriasym.html</loc>
-    <lastmod>2025-01-09</lastmod>
+    <loc>https://www.salsaymiga.cl/pages/galeriasym.html</loc>
+    <lastmod>2025-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

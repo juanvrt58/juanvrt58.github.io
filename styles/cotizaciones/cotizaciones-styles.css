@@ -111,3 +111,194 @@ body {
     }
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/****************************/
+/*        Por que elegirnos */
+/*****************************/
+
+/* 📌 SECCIÓN ¿POR QUÉ ELEGIRNOS? */
+.porque-elegirnos {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.porque-elegirnos h2 {
+  font-size: 28px;
+  color: #990001;
+  margin-bottom: 15px;
+}
+
+.porque-elegirnos p {
+  font-size: 18px;
+  color: #333;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* 📌 CONTENEDOR DE RAZONES */
+.razones-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 📌 CADA RAZÓN */
+.razon {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 250px;
+  flex: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.razon:hover {
+  transform: scale(1.05);
+}
+
+/* 📌 ÍCONOS */
+.razon i {
+  font-size: 40px;
+  color: #990001;
+  margin-bottom: 10px;
+}
+
+/* 📌 TEXTOS */
+.razon h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.razon p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 1024px) {
+  .razones-container {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .razon {
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .razon {
+      max-width: 100%;
+  }
+}
+
+
+/* ======================== */
+/* 📝 FORMULARIO DE COTIZACIÓN */
+/* ======================== */
+
+.form-container {
+  background-color: white;
+  width: 60%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* 📌 RADIO BUTTONS Y CHECKBOXES */
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* 📌 CAPTCHA */
+.g-recaptcha {
+  margin-bottom: 20px;
+}
+
+/* 📌 SECCIÓN SELECCIÓN DE PIZZAS */
+.pizzas-selection {
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.pizzas-selection legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #990001;
+}
+
+/* 📌 SCROLL EN SELECCIÓN */
+.checkbox-group.scrollable {
+  max-height: 200px; /* Ajusta la altura del contenedor */
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+}
+
+/* 📌 CHECKBOXES MEJORADOS */
+.checkbox-group label {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* 📌 ESTILO DE NOMBRES Y DESCRIPCIONES */
+.pizza-nombre {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #990001;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 📌 CONFIRMACIÓN DE SELECCIÓN */
+.seleccion-confirmacion {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
